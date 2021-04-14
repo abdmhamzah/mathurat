@@ -1,31 +1,51 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Dimensions, StyleSheet, Text, View, ScrollView } from "react-native";
 import data from "./src/data/data.json";
-import * as Font from "expo-font";
+import { useFonts } from "expo-font";
 import { AppLoading } from "expo";
 
-const fetchFonts = () => {
-  return Font.loadAsync({
-    lateef: require("./assets/fonts/Lateef-Regular.ttf"),
-  });
-};
+import Card from "./src/components/Card";
+
+const windowWidth = Dimensions.get("window").width;
 
 export default function App() {
-  const [dataLoaded, setDataLoaded] = useState(false);
-  let arab = data.mathurat_pagi[0].arab;
-  let terjemah = data.mathurat_pagi[0].terjemah;
-  let pengulangan = data.mathurat_pagi[0].pengulangan;
+  const [fontLoaded] = useFonts({
+    lateef: require("./src/fonts/Lateef-Regular.ttf"),
+  });
 
-  if (!dataLoaded) {
-    return (
-      <AppLoading startAsync={fetchFonts} onFinish={setDataLoaded(true)} />
-    );
+  const [isSughraPagi, setIsSughraPagi] = useState(true);
+  const [isSughraSore, setIsSughraSore] = useState(false);
+  const [isKubraPagi, setIsKubraPagi] = useState(false);
+  const [isKubraSore, setIsKubraSore] = useState(false);
+
+  let mathurat_pagi = data.mathurat_sughra_pagi;
+  let mathurat_sore = data.mathurat_sughra_sore;
+
+  if (!fontLoaded) {
+    return <AppLoading />;
   }
+
   return (
     <View style={styles.container}>
-      <Text style={styles.arab}>{arab}</Text>
-      <Text>{terjemah}</Text>
-      <Text>{pengulangan}</Text>
+      <ScrollView
+        contentContainerStyle={{
+          alignItems: "center",
+          width: windowWidth,
+          marginVertical: 120,
+        }}
+      >
+        {mathurat_pagi.map((doa, idx) => {
+          return (
+            <Card
+              key={idx}
+              judul={doa.judul}
+              arab={doa.arab}
+              terjemah={doa.terjemah}
+              pengulangan={doa.pengulangan}
+            />
+          );
+        })}
+      </ScrollView>
     </View>
   );
 }
@@ -33,11 +53,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
+    backgroundColor: "#48426d",
     justifyContent: "center",
-  },
-  arab: {
-    fontFamily: "lateef",
   },
 });
