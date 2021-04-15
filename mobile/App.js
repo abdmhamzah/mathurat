@@ -1,8 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-
-// screens
 import {
   HomeScreen,
   MathuratPagiScreen,
@@ -13,7 +11,7 @@ import {
   DoaSholatScreen,
   HadistScreen,
 } from "./src/screens";
-import { DohaHajiScreen } from "./src/screens";
+import { styles, basic } from "./src/styles";
 
 const Stack = createStackNavigator();
 
@@ -31,17 +29,9 @@ export default function App() {
           component={MathuratPagiScreen}
           options={{
             title: "Dzikir Pagi",
-            headerStyle: {
-              backgroundColor: "#312c51",
-              elevation: 0,
-              shadowOpacity: 0,
-              borderBottomWidth: 0,
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-              fontSize: 20,
-            },
+            headerStyle: styles.header_bar,
+            headerTintColor: basic,
+            headerTitleStyle: styles.header_title,
           }}
         />
         <Stack.Screen
@@ -49,17 +39,9 @@ export default function App() {
           component={MathuratSoreScreen}
           options={{
             title: "Dzikir Sore",
-            headerStyle: {
-              backgroundColor: "#312c51",
-              elevation: 0,
-              shadowOpacity: 0,
-              borderBottomWidth: 0,
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-              fontSize: 20,
-            },
+            headerStyle: styles.header_bar,
+            headerTintColor: basic,
+            headerTitleStyle: styles.header_title,
           }}
         />
         <Stack.Screen
@@ -67,17 +49,9 @@ export default function App() {
           component={HadistScreen}
           options={{
             title: "Hadist Arba'in",
-            headerStyle: {
-              backgroundColor: "#312c51",
-              elevation: 0,
-              shadowOpacity: 0,
-              borderBottomWidth: 0,
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-              fontSize: 20,
-            },
+            headerStyle: styles.header_bar,
+            headerTintColor: basic,
+            headerTitleStyle: styles.header_title,
           }}
         />
         <Stack.Screen
@@ -85,35 +59,19 @@ export default function App() {
           component={DoaPilihanScreen}
           options={{
             title: "Doa-doa Pilihan",
-            headerStyle: {
-              backgroundColor: "#312c51",
-              elevation: 0,
-              shadowOpacity: 0,
-              borderBottomWidth: 0,
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-              fontSize: 20,
-            },
+            headerStyle: styles.header_bar,
+            headerTintColor: basic,
+            headerTitleStyle: styles.header_title,
           }}
         />
         <Stack.Screen
           name="Doa-doa Haji & Umroh"
-          component={DohaHajiScreen}
+          component={DoaHajiScreen}
           options={{
             title: "Doa-doa Haji & Umroh",
-            headerStyle: {
-              backgroundColor: "#312c51",
-              elevation: 0,
-              shadowOpacity: 0,
-              borderBottomWidth: 0,
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-              fontSize: 20,
-            },
+            headerStyle: styles.header_bar,
+            headerTintColor: basic,
+            headerTitleStyle: styles.header_title,
           }}
         />
         <Stack.Screen
@@ -121,17 +79,9 @@ export default function App() {
           component={DoaSholatScreen}
           options={{
             title: "Doa-doa Sholat",
-            headerStyle: {
-              backgroundColor: "#312c51",
-              elevation: 0,
-              shadowOpacity: 0,
-              borderBottomWidth: 0,
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-              fontSize: 20,
-            },
+            headerStyle: styles.header_bar,
+            headerTintColor: basic,
+            headerTitleStyle: styles.header_title,
           }}
         />
         <Stack.Screen
@@ -139,17 +89,9 @@ export default function App() {
           component={SettingScreen}
           options={{
             title: "Setting",
-            headerStyle: {
-              backgroundColor: "#312c51",
-              elevation: 0,
-              shadowOpacity: 0,
-              borderBottomWidth: 0,
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-              fontSize: 20,
-            },
+            headerStyle: styles.header_bar,
+            headerTintColor: basic,
+            headerTitleStyle: styles.header_title,
           }}
         />
       </Stack.Navigator>

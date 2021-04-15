@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { StyleSheet, View, FlatList } from "react-native";
+import { View, FlatList } from "react-native";
 import { dataMenu } from "../data/dataMenu";
 import { ButtonMenu } from "../components";
+import { styles } from "../styles";
 
 export default function Home(props) {
   const [title, setTitle] = useState(dataMenu);
@@ -10,8 +11,8 @@ export default function Home(props) {
     <View style={styles.container}>
       <FlatList
         numColumns={2}
-        keyExtractor={(item) => item.id}
         data={title}
+        keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <ButtonMenu title={item.name} logo={item.logo} />
         )}
@@ -19,13 +20,3 @@ export default function Home(props) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: "row",
-    backgroundColor: "#48426d",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
