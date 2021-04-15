@@ -1,6 +1,6 @@
 import React from "react";
 import { Dimensions, StyleSheet, View, ScrollView } from "react-native";
-import data from "../data/data.json";
+import data from "../data/mathurat.json";
 import { useFonts } from "expo-font";
 import { AppLoading } from "expo";
 

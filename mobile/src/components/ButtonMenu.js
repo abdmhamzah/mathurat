@@ -6,14 +6,22 @@ import {
   TouchableOpacity,
   Image,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const screenWidth = Dimensions.get("screen").width;
 
 export default function CardMenu(props) {
+  const navigation = useNavigation();
+
+  function goToTitle() {
+    navigation.navigate(props.title);
+  }
+
   return (
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity onPress={goToTitle} style={styles.button}>
       <Image source={props.logo} style={styles.logo} />
       <Text style={styles.title}>{props.title}</Text>
+      {/* <Text style={{ color: "white" }}>{JSON.stringify(props.title)}</Text> */}
     </TouchableOpacity>
   );
 }
@@ -37,8 +45,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   logo: {
-    height: screenWidth / 4,
-    width: screenWidth / 4,
+    height: screenWidth / 5,
+    width: screenWidth / 5,
     marginTop: 25,
   },
 });

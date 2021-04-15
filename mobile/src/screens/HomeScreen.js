@@ -1,32 +1,10 @@
 import React, { useState } from "react";
-import { Dimensions, StyleSheet, View, FlatList } from "react-native";
-
-// components
+import { StyleSheet, View, FlatList } from "react-native";
+import { dataMenu } from "../data/dataMenu";
 import { ButtonMenu } from "../components";
 
-const screenHeight = Dimensions.get("screen").height;
-
 export default function Home(props) {
-  const [title, setTitle] = useState([
-    { id: "1", name: `Al Ma'tsurat Pagi`, logo: require("../assets/sun.png") },
-    {
-      id: "2",
-      name: `Al Ma'tsurat Sore`,
-      logo: require("../assets/half-moon.png"),
-    },
-    {
-      id: "3",
-      name: `Hadist Arba'in`,
-      logo: require("../assets/rub-el-hizb.png"),
-    },
-    { id: "4", name: `Doa-doa Pilihan`, logo: require("../assets/window.png") },
-    {
-      id: "4",
-      name: `Doa-doa Haji & Umroh`,
-      logo: require("../assets/Mecca.png"),
-    },
-    { id: "4", name: `Doa-doa Sholat`, logo: require("../assets/isha.png") },
-  ]);
+  const [title, setTitle] = useState(dataMenu);
 
   return (
     <View style={styles.container}>

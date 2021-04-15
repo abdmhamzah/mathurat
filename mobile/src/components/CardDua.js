@@ -38,10 +38,6 @@ const styles = StyleSheet.create({
     borderWidth: 0.2,
     marginBottom: 15,
     width: screenWidth - 40,
-    shadowColor: "grey",
-    shadowOffset: { width: 1, height: 1 },
-    shadowOpacity: 0.5,
-    shadowRadius: 5,
   },
   header: {
     display: "flex",
