@@ -4,11 +4,11 @@ import data from "../data/data.json";
 import { useFonts } from "expo-font";
 import { AppLoading } from "expo";
 
-import { Card } from "../components";
+import { CardDua } from "../components";
 
-const windowWidth = Dimensions.get("window").width;
+const windowWidth = Dimensions.get("screen").width;
 
-export default function MathuratSore(props) {
+export default function MathuratSore({ navigation }) {
   const [fontLoaded] = useFonts({
     lateef: require("../fonts/Lateef-Regular.ttf"),
   });
@@ -25,12 +25,13 @@ export default function MathuratSore(props) {
         contentContainerStyle={{
           alignItems: "center",
           width: windowWidth,
-          marginVertical: 120,
+          marginVertical: 20,
+          paddingBottom: 140,
         }}
       >
         {mathurat_pagi.map((doa, idx) => {
           return (
-            <Card
+            <CardDua
               key={idx}
               judul={doa.judul}
               arab={doa.arab}
@@ -49,5 +50,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#48426d",
     justifyContent: "center",
+    alignItems: "center",
   },
 });

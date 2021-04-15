@@ -3,7 +3,7 @@ import { Dimensions, StyleSheet, Text, View } from "react-native";
 import { useFonts } from "expo-font";
 import { AppLoading } from "expo";
 
-const windowWidth = Dimensions.get("window").width;
+const screenWidth = Dimensions.get("screen").width;
 
 export default function Card(props) {
   let [fontsLoaded] = useFonts({
@@ -34,11 +34,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#312c51",
     borderRadius: 8,
-    borderColor: 'grey',
+    borderColor: "grey",
     borderWidth: 0.2,
     marginBottom: 15,
-    width: windowWidth - 40,
-    shadowColor: 'grey',
+    width: screenWidth - 40,
+    shadowColor: "grey",
     shadowOffset: { width: 1, height: 1 },
     shadowOpacity: 0.5,
     shadowRadius: 5,
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    width: windowWidth - 70,
+    width: screenWidth - 70,
     marginTop: 10,
     paddingVertical: 10,
     paddingHorizontal: 10,
@@ -79,13 +79,12 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   fadilah_title: {
-    // marginVertical: 20,
-    color: 'white'
+    color: "white",
   },
   fadilah: {
     marginTop: 5,
     marginBottom: 20,
-    color: 'white',
-    fontStyle: 'italic'
-  }
+    color: "white",
+    fontStyle: "italic",
+  },
 });

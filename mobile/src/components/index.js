@@ -1,1 +1,2 @@
-export { default as Card } from "./Card";
+export { default as CardDua } from "./CardDua";
+export { default as ButtonMenu } from "./ButtonMenu";
