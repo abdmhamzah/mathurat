@@ -1,9 +1,10 @@
 import React from "react";
-import { Dimensions, StyleSheet, Text, View, ScrollView } from "react-native";
+import { Dimensions, StyleSheet, View, ScrollView } from "react-native";
 import data from "../data/data.json";
 import { useFonts } from "expo-font";
 import { AppLoading } from "expo";
 
+// components
 import { CardDua } from "../components";
 
 const windowWidth = Dimensions.get("screen").width;

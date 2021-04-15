@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { enableScreens } from "react-native-screens";
 
 // screens
 import {
@@ -11,7 +10,6 @@ import {
   SettingScreen,
 } from "./src/screens";
 
-enableScreens();
 const Stack = createStackNavigator();
 
 export default function App() {
