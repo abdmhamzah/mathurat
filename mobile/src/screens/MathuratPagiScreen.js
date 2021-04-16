@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
-import data from "../data/mathurat.json";
+import { View, FlatList } from "react-native";
+import { dataMathuratSughraPagi } from "../data/dataMathuratSughraPagi";
 import { CardDua } from "../components";
 import { styles } from "../styles";
 
 export default function MathuratSore() {
-  const [mathuratPagi, setMathuratPagi] = useState(data.mathurat_sughra_pagi);
+  const [mathuratPagi, setMathuratPagi] = useState(dataMathuratSughraPagi);
 
   return (
-    <View style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scroll_screen}>
-        {mathuratPagi.map((doa, idx) => {
-          return (
-            <CardDua
-              key={idx}
-              judul={doa.judul}
-              arab={doa.arab}
-              terjemah={doa.terjemah}
-              pengulangan={doa.pengulangan}
-            />
-          );
-        })}
-      </ScrollView>
+    <View style={styles.scroll_screen}>
+      <FlatList
+        keyExtractor={(item) => item.id}
+        data={mathuratPagi}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => (
+          <CardDua
+            judul={item.judul}
+            arab={item.arab}
+            terjemah={item.terjemah}
+            pengulangan={item.pengulangan}
+          />
+        )}
+      />
     </View>
   );
 }

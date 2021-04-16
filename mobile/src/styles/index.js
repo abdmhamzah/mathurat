@@ -28,11 +28,10 @@ const styles = StyleSheet.create({
   },
   scroll_screen: {
     flexGrow: 1,
+    backgroundColor: secondary,
     justifyContent: "center",
     alignItems: "center",
     width: screenWidth,
-    marginVertical: 20,
-    paddingBottom: 140,
   },
   button: {
     flex: 1,
@@ -61,7 +60,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: primary,
     borderRadius: 8,
-    marginBottom: 15,
+    marginTop: 25,
     width: screenWidth - 40,
   },
   header: {
@@ -89,7 +88,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: basic,
     fontWeight: "400",
-    marginVertical: 20,
+    marginTop: 20,
     paddingHorizontal: 25,
     textAlign: "center",
   },
@@ -97,6 +96,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     color: basic,
     paddingHorizontal: 25,
+    marginBottom: 35,
     textAlign: "center",
   },
   fadilah_title: {
