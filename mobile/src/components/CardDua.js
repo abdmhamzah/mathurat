@@ -7,6 +7,8 @@ import { styles } from "../styles";
 export default function Card(props) {
   let [fontsLoaded] = useFonts({
     lateef: require("../fonts/Lateef-Regular.ttf"),
+    poppins: require("../fonts/Poppins-Regular.ttf"),
+    circular: require("../fonts/lineto-circular-book.ttf"),
   });
 
   if (!fontsLoaded) {

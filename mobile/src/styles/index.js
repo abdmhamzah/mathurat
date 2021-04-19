@@ -1,6 +1,7 @@
 import { Dimensions, StyleSheet } from "react-native";
 
 const screenWidth = Dimensions.get("screen").width;
+const screenHeight = Dimensions.get("screen").height;
 
 const primary = "#312c51";
 const secondary = "#48426d";
@@ -21,10 +22,11 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    flexDirection: "row",
     backgroundColor: secondary,
+  },
+  menu: {
+    flexGrow: 1,
     justifyContent: "center",
-    alignItems: "center",
   },
   scroll_screen: {
     flexGrow: 1,
@@ -46,9 +48,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 14,
     paddingVertical: 25,
     color: warning,
-    fontWeight: "bold",
-    fontSize: 18,
+    fontSize: 20,
     textAlign: "center",
+    fontFamily: "circularBold",
   },
   logo: {
     height: screenWidth / 5,
@@ -71,17 +73,20 @@ const styles = StyleSheet.create({
     marginTop: 10,
     paddingVertical: 10,
     paddingHorizontal: 10,
+    // fontFamily: "circular",
   },
   judul: {
     flex: 1,
     textAlign: "right",
     fontSize: 18,
     color: warning,
+    fontFamily: "circular",
   },
   pengulangan: {
     flex: 1,
     fontSize: 18,
     color: warning,
+    fontFamily: "circular",
   },
   arabic: {
     fontFamily: "lateef",
@@ -98,6 +103,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 25,
     marginBottom: 35,
     textAlign: "center",
+    fontFamily: "circular",
+    fontSize: 16,
   },
   fadilah_title: {
     color: danger,

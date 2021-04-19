@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, FlatList } from "react-native";
+import { FlatList, View } from "react-native";
 import { dataMenu } from "../data/dataMenu";
 import { ButtonMenu } from "../components";
 import { styles } from "../styles";
@@ -10,6 +10,7 @@ export default function Home(props) {
   return (
     <View style={styles.container}>
       <FlatList
+        contentContainerStyle={styles.menu}
         numColumns={2}
         data={title}
         keyExtractor={(item) => item.id}
