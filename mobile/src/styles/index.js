@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 14,
     paddingVertical: 25,
     color: warning,
-    fontSize: 20,
+    fontSize: 18,
     textAlign: "center",
     fontFamily: "circularBold",
   },
@@ -73,7 +73,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
     paddingVertical: 10,
     paddingHorizontal: 10,
-    // fontFamily: "circular",
   },
   judul: {
     flex: 1,

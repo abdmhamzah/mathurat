@@ -4,7 +4,7 @@ import { dataMenu } from "../data/dataMenu";
 import { ButtonMenu } from "../components";
 import { styles } from "../styles";
 
-export default function Home(props) {
+export default function HomeScreen(props) {
   const [title, setTitle] = useState(dataMenu);
 
   return (

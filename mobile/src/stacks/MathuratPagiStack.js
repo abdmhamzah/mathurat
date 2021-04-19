@@ -1,18 +1,18 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { DoaPilihanScreen } from "../screens";
+import { MathuratPagiScreen } from "../screens";
 import { styles, basic } from "../styles";
 
 const Stack = createStackNavigator();
 
-export default function DoaPilihanStack() {
+export default function MathuratPagiStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Doa-doa Pilihan"
-        component={DoaPilihanScreen}
+        name="Al Ma'tsurat Pagi"
+        component={MathuratPagiScreen}
         options={{
-          title: "Doa-doa Pilihan",
+          title: "Dzikir Pagi",
           headerStyle: styles.header_bar,
           headerTintColor: basic,
           headerTitleStyle: styles.header_title,
