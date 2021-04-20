@@ -12,6 +12,7 @@ export default function MathuratSore() {
       <FlatList
         keyExtractor={(item) => item.id}
         data={mathuratSore}
+        contentContainerStyle={{ paddingVertical: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
           <CardDua

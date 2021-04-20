@@ -13,6 +13,7 @@ export default function MathuratSore() {
         keyExtractor={(item) => item.id}
         data={mathuratPagi}
         showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingVertical: 16 }}
         renderItem={({ item }) => (
           <CardDua
             judul={item.judul}
