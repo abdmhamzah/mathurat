@@ -1,18 +1,18 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { DoaHajiScreen } from "../screens";
+import { SettingScreen } from "../screens";
 import { styles, basic } from "../styles";
 
 const Stack = createStackNavigator();
 
-export default function DoaHajiStack() {
+export default function SettingStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Doa-doa Haji & Umroh"
-        component={DoaHajiScreen}
+        name="Setting"
+        component={SettingScreen}
         options={{
-          title: "Doa-doa Haji & Umroh",
+          title: "Setting",
           headerStyle: styles.header_bar,
           headerTintColor: basic,
           headerTitleStyle: styles.header_title,

@@ -1,7 +1,6 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { SettingScreen } from "./src/screens";
 import {
   DoaHajiStack,
   DoaPilihanStack,
@@ -10,8 +9,8 @@ import {
   HomeStack,
   MathuratPagiStack,
   MathuratSoreStack,
+  SettingStack,
 } from "./src/stacks";
-import { styles, basic } from "./src/styles";
 
 const Stack = createStackNavigator();
 
@@ -31,16 +30,7 @@ export default function App() {
         <Stack.Screen name="Doa-doa Pilihan" component={DoaPilihanStack} />
         <Stack.Screen name="Doa-doa Haji & Umroh" component={DoaHajiStack} />
         <Stack.Screen name="Doa-doa Sholat" component={DoaSholatStack} />
-        <Stack.Screen
-          name="Setting"
-          component={SettingScreen}
-          options={{
-            title: "Setting",
-            headerStyle: styles.header_bar,
-            headerTintColor: basic,
-            headerTitleStyle: styles.header_title,
-          }}
-        />
+        <Stack.Screen name="Setting" component={SettingStack} />
       </Stack.Navigator>
     </NavigationContainer>
   );

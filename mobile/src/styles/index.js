@@ -28,6 +28,25 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: "center",
   },
+  home_headbar: {
+    flex: 1,
+    alignItems: "flex-end",
+    flexDirection: "row",
+    paddingHorizontal: screenWidth / 22,
+    paddingVertical: 10,
+    backgroundColor: primary,
+  },
+  home_title: {
+    flex: 1,
+    fontFamily: "circularBold",
+    fontSize: 30,
+    color: danger,
+  },
+  home_setting: {
+    color: danger,
+    textAlign: "right",
+    marginRight: 5,
+  },
   scroll_screen: {
     flexGrow: 1,
     backgroundColor: secondary,
