@@ -7,7 +7,6 @@ import { dataMenu } from "../data/dataMenu";
 import { ButtonMenu } from "../components";
 import { styles } from "../styles";
 import { useNavigation } from "@react-navigation/native";
-import { parse } from "react-native-svg";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
@@ -56,7 +55,6 @@ export default function HomeScreen() {
         </TouchableOpacity>
       </View>
       <FlatList
-        contentContainerStyle={styles.menu}
         numColumns={2}
         data={title}
         keyExtractor={(item) => item.id}

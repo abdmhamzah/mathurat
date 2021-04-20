@@ -7,7 +7,11 @@ const Stack = createStackNavigator();
 
 export default function SettingStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerBackTitleVisible: false,
+      }}
+    >
       <Stack.Screen
         name="Setting"
         component={SettingScreen}

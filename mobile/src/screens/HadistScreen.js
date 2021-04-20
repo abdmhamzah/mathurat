@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View, FlatList, TouchableOpacity } from "react-native";
 import { useFonts } from "expo-font";
-import { CardDua } from "../components";
 import { AppLoading } from "expo";
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "../styles";
@@ -41,13 +40,6 @@ export default function HadistScreen() {
             <Text style={styles.terjemah}>{item.judul}</Text>
           </TouchableOpacity>
         )}
-        // renderItem={({ item }) => (
-        //   <CardDua
-        //     judul={item.judul}
-        //     arab={item.arab}
-        //     terjemah={item.terjemah}
-        //   />
-        // )}
       />
     </View>
   );

@@ -7,7 +7,11 @@ const Stack = createStackNavigator();
 
 export default function MathuratSoreStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerBackTitleVisible: false,
+      }}
+    >
       <Stack.Screen
         name="Al Ma'tsurat Sore"
         component={MathuratSoreScreen}

@@ -1,13 +1,17 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { MathuratPagiScreen } from "../screens";
-import { styles, basic } from "../styles";
+import { styles, basic, danger } from "../styles";
 
 const Stack = createStackNavigator();
 
 export default function MathuratPagiStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerBackTitleVisible: false,
+      }}
+    >
       <Stack.Screen
         name="Al Ma'tsurat Pagi"
         component={MathuratPagiScreen}

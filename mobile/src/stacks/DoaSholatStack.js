@@ -7,7 +7,11 @@ const Stack = createStackNavigator();
 
 export default function DoaSholatStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerBackTitleVisible: false,
+      }}
+    >
       <Stack.Screen
         name="Doa-doa Sholat"
         component={DoaSholatScreen}

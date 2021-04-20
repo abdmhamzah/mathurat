@@ -7,7 +7,11 @@ const Stack = createStackNavigator();
 
 export default function DoaPilihanStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerBackTitleVisible: false,
+      }}
+    >
       <Stack.Screen
         name="Doa-doa Pilihan"
         component={DoaPilihanScreen}

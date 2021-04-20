@@ -7,7 +7,11 @@ const Stack = createStackNavigator();
 
 export default function HadistStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerBackTitleVisible: false,
+      }}
+    >
       <Stack.Screen
         name="Hadist Arba'in"
         component={HadistScreen}
