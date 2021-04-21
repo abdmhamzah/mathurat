@@ -13,7 +13,7 @@ export const dataHadist = [
     arab:
       "عَنْ عُمَرَ رضي الله عنه أَيضاً قَالَ: بَيْنَمَا نَحْنُ جُلُوْسٌ عِنْدَ رَسُوْلِ اللهِصلى الله عليه و سلّم ذَاتَ يَوْمٍ إِذْ طَلَعَ عَلَيْنَا رَجُلٌ شَدِيْدُ بَيَاضِ الثِّيَابِ شَدِيْدُ سَوَادِ الشَّعْرِ لاَ يُرَى عَلَيْهِ أَثَرُ السَّفَرِ وَلاَ يَعْرِفُهُ مِنَّا أَحَدٌ حَتَّى جَلَسَ إِلَى النَّبِيِّ صلى الله عليه وسلم فَأَسْنَدَ رُكْبَتَيْهِ إِلَى رُكْبَتَيْهِ وَوَضَعَ كَفَّيْهِ عَلَى فَخِذَيْهِ وَقَالَ: يَا مُحَمَّدُ أَخْبِرْنِي عَنِ الإِسْلاَم، فَقَالَ رَسُولُ اللهِ صلى الله عليه وسلم: (الإِسْلاَمُ أَنْ تَشْهَدَ أَنْ لاَ إِلَهَ إِلاَّ اللهُ وَأَنَّ مُحَمَّدَاً رَسُوْلُ اللهِ، وَتُقِيْمَ الصَّلاَةَ، وَتُؤْتِيَ الزَّكَاةَ، وَتَصُوْمَ رَمَضَانَ، وَتَحُجَّ البيْتَ إِنِ اِسْتَطَعتَ إِليْهِ سَبِيْلاً. قَالَ: صَدَقْتَ. فَعَجِبْنَا لَهُ يَسْأَلُهُ وَيُصَدِّقُهُ، قَالَ: فَأَخْبِرْنِيْ عَنِ الإِيْمَانِ، قَالَ: أَنْ تُؤْمِنَ بِاللهِ، وَمَلائِكَتِهِ، وَكُتُبِهِ وَرُسُلِهِ، وَالْيَوْمِ الآَخِرِ، وَتُؤْمِنَ بِالقَدَرِ خَيْرِهِ وَشَرِّهِ قَالَ: صَدَقْتَ، قَالَ: فَأَخْبِرْنِيْ عَنِ الإِحْسَانِ، قَالَ: أَنْ تَعْبُدَ اللهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ قَالَ: فَأَخْبِرْنِي عَنِ السَّاعَةِ، قَالَ: مَا الْمَسئُوُلُ عَنْهَا بِأَعْلَمَ مِنَ السَّائِلِ قَالَ: فَأَخْبِرْنِيْ عَنْ أَمَارَاتِهَا، قَالَ: أَنْ تَلِدَ الأَمَةُ رَبَّتَهَا، وَأَنْ تَرَى الْحُفَاةَ الْعُرَاةَ الْعَالَةَ رِعَاءَ الشَّاءِ يَتَطَاوَلُوْنَ فِي البُنْيَانِ ثُمَّ انْطَلَقَ فَلَبِثْتُ مَلِيَّاً ثُمَّ قَالَ: يَا عُمَرُ أتَدْرِي مَنِ السَّائِلُ؟ قُلْتُ: اللهُ وَرَسُوْلُهُ أَعْلَمُ، قَالَ: فَإِنَّهُ جِبْرِيْلُ أَتَاكُمْ يُعَلِّمُكُمْ دِيْنَكُمْ. رَوَاهُ مُسْلِمٌ.",
     terjemah:
-      "Dari Umar radhiyallahu ‘anhu pula dia berkata: \n \n Pada suatu hari ketika kami sedang duduk-duduk bersama Rasulullah shallallahu ‘alaihi wa sallam, tiba-tiba datang seorang laki-laki berpakaian sangat putih, dan rambutnya sangat hitam, tidak terlihat padanya tanda-tanda bekas perjalanan, dan tidak seorang pun dari kami yang mengenalnya, kemudian ia duduk di hadapan Nabi shallallahu ‘alaihi wa sallam dan mendekatkan lututnya lalu meletakkan kedua tangannya di atas pahanya, seraya berkata: \n \n Wahai Muhammad jelaskan kepadaku tentang Islam?’ Nabi shallallahu ‘alaihi wa sallam menjawab: ”Islam itu adalah engkau bersaksi bahwa tidak ada sesembahan yang berhak diibadahi dengan benar kecuali Allah dan Muhammad adalah utusan-Nya, engkau menegakkan shalat, menunaikan zakat, puasa Ramadhan dan haji ke Baitullah Al Haram jika engkau mampu mengadakan perjalanan ke sana.” Laki-laki tersebut berkata: ‘Engkau benar.’ \n \n Maka kami pun terheran-heran padanya, dia yang bertanya dan dia sendiri yang membenarkan jawabannya. Dia berkata lagi: “Jelaskan kepadaku tentang iman?” Nabi shallallahu ‘alaihi wa sallam menjawab: “(Iman itu adalah) Engkau beriman kepada Allah, malaikat-malaikat-Nya, kitab-kitab-Nya, rasul-rasul-Nya dan hari akhir serta engkau beriman kepada takdir baik dan buruk.” Ia berkata: ‘Engkau benar.’ \n \n Kemudian laki-laki tersebut bertanya lagi: ‘Jelaskan kepadaku tentang ihsan?’ Beliau shallallahu ‘alaihi wa sallam bersabda: “(Ihsan adalah) Engkau beribadah kepada Allah seolah-olah engkau melihat-Nya. Kalaupun engkau tidak bisa melihat-Nya, sungguh Diamelihatmu.” Dia berkata: “Beritahu kepadaku kapan terjadinya kiamat?” Nabi shallallahu ‘alaihi wa sallam menjawab: “Tidaklah orang yang ditanya lebih mengetahui dari yang bertanya.” Ia berkata: “Jelaskan kepadaku tanda-tandanya!” Nabi shallallahu ‘alaihi wa sallam berkata: “Jika seorang budak wanita melahirkan tuannya dan jika engkau mendapati penggembala kambing yang tidak beralas kaki dan tidak pakaian saling berlomba dalam meninggikan bangunan.” \n \n Umar radhiyallahu ‘anhu berkata: ‘Kemudian laki-laki itu pergi, aku pun terdiam sejenak.’ \n \n Maka Rasulullah shallallahu ‘alaihi wa sallam bertanya kepadaku: “Wahai ‘Umar, tahukah engkau siapa orang tadi?” Aku pun menjawab: “Allah dan Rasul-Nya lebih tahu.”  Nabi shallallahu ‘alaihi wa sallam bersabda: “Dia adalah Jibril yang datang untuk mengajarkan agama ini kepada kalian.” \n \n Diriwayatkan oleh Muslim (8).",
+      "Dari Umar radhiyallahu ‘anhu pula dia berkata: \n \n Pada suatu hari ketika kami sedang duduk-duduk bersama Rasulullah shallallahu ‘alaihi wa sallam, tiba-tiba datang seorang laki-laki berpakaian sangat putih, dan rambutnya sangat hitam, tidak terlihat padanya tanda-tanda bekas perjalanan, dan tidak seorang pun dari kami yang mengenalnya, kemudian ia duduk di hadapan Nabi shallallahu ‘alaihi wa sallam dan mendekatkan lututnya lalu meletakkan kedua tangannya di atas pahanya, seraya berkata: \n \n Wahai Muhammad jelaskan kepadaku tentang Islam?’ Nabi shallallahu ‘alaihi wa sallam menjawab: ”Islam itu adalah engkau bersaksi bahwa tidak ada sesembahan yang berhak diibadahi dengan benar kecuali Allah dan Muhammad adalah utusan-Nya, engkau menegakkan shalat, menunaikan zakat, puasa Ramadhan dan haji ke Baitullah Al Haram jika engkau mampu mengadakan perjalanan ke sana.” Laki-laki tersebut berkata: ‘Engkau benar.’ \n \n Maka kami pun terheran-heran padanya, dia yang bertanya dan dia sendiri yang membenarkan jawabannya. Dia berkata lagi: “Jelaskan kepadaku tentang iman?” Nabi shallallahu ‘alaihi wa sallam menjawab: “(Iman itu adalah) Engkau beriman kepada Allah, malaikat-malaikat-Nya, kitab-kitab-Nya, rasul-rasul-Nya dan hari akhir serta engkau beriman kepada takdir baik dan buruk.” Ia berkata: ‘Engkau benar.’ \n \n Kemudian laki-laki tersebut bertanya lagi: ‘Jelaskan kepadaku tentang ihsan?’ Beliau shallallahu ‘alaihi wa sallam bersabda: “(Ihsan adalah) Engkau beribadah kepada Allah seolah-olah engkau melihat-Nya. Kalaupun engkau tidak bisa melihat-Nya, sungguh Diamelihatmu.” Dia berkata: “Beritahu kepadaku kapan terjadinya kiamat?” Nabi shallallahu ‘alaihi wa sallam menjawab: “Tidaklah orang yang ditanya lebih mengetahui dari yang bertanya.” Ia berkata: “Jelaskan kepadaku tanda-tandanya!” Nabi shallallahu ‘alaihi wa sallam berkata: “Jika seorang budak wanita melahirkan tuannya dan jika engkau mendapati penggembala kambing yang tidak beralas kaki dan tidak pakaian saling berlomba dalam meninggikan bangunan.” \n \n Umar radhiyallahu ‘anhu berkata: ‘Kemudian laki-laki itu pergi, aku pun terdiam sejenak.’ Maka Rasulullah shallallahu ‘alaihi wa sallam bertanya kepadaku: “Wahai ‘Umar, tahukah engkau siapa orang tadi?” Aku pun menjawab: “Allah dan Rasul-Nya lebih tahu.”  Nabi shallallahu ‘alaihi wa sallam bersabda: “Dia adalah Jibril yang datang untuk mengajarkan agama ini kepada kalian.” \n \n Diriwayatkan oleh Muslim (8).",
   },
   {
     id: "3",
@@ -79,66 +79,86 @@ export const dataHadist = [
     terjemah:
       "Dari Abu Hurairah radhiyallahu ‘anhu, dia berkata: \n \n ‘Rasulullah shallallahu ‘alaihi wa sallam bersabda: “Sesungguhnya Allah Maha Baik dan tidak menerima kecuali yang baik. Dan sesungguhnya Allah subhanahu wa ta’ala telah memerintahkan kepada kaum mukminin dengan sesuatu yang Allah perintahkan pula kepada para rasul. Maka Allah subhanahu wa ta’ala berfirman: ”Wahai para rasul, makanlah dari makanan yang baik-baik dan kerjakanlah amal shalih.” Dan Allah subhanahu wa ta’ala berfirman: ”Wahai orang-orang yang beriman, makanlah kalian dari rezeki yang baik-baik yang telah Kami berikan kepada kalian.” \n \n Kemudian beliau shallallahu ‘alaihi wa sallam menyebutkan seseorang yang melakukan perjalanan panjang dalam keadaan dirinya kusut dan kotor, dia menengadahkan kedua tangannya ke langit seraya berdoa: ”Wahai Rabb-ku, wahai Rabb-ku,” namun makanannya haram, minumannya haram dan pakaiannya haram dan kenyang dengan sesuatu yang harom, lalu bagaimana mungkin doanya akan dikabulkan?.” \n Diriwayatkan oleh Muslim (1015)",
   },
-  // {
-  //   id: "11",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "12",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "13",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "14",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "15",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "16",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "17",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "18",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "19",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
-  // {
-  //   id: "20",
-  //   judul: "",
-  //   arab: "",
-  //   terjemah: "",
-  // },
+  {
+    id: "11",
+    judul: "Tinggalkanlah Sesuatu yang Membuatmu Ragu",
+    arab:
+      "عَنْ أَبِي مُحَمَّدٍ الحَسَنِ بنِ عَلِيّ بْنِ أَبِيْ طَالِبٍ سِبْطِ رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وَرَيْحَانَتِهِ رَضِيَ اللهُ عَنْهُمَا قَالَ: حَفِظْتُ مِنْ رَسُوْلِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ: دَعْ مَا يَرِيْبُكَ إِلَى مَا لاَ يَرِيْبُكَ. رَوَاهُ التِّرْمِذِي وَالنَّسَائِي وَقَالَ التِّرْمِذِيّ: حَدِيْثٌ حَسَنٌ صَحِيْحٌ.",
+    terjemah:
+      "Dari Abu Muhammad Al Hasan bin ‘Ali bin Abi Thalib radhiyallahu ‘anhuma, cucu kesayangan Rasulullah shallallahu ‘alaihi wa sallam, dia berkata: \n \n  ‘Aku hafal dari Rasulullah shallallahu ‘alaihi wa sallam: ”Tinggalkanlah sesuatu yang membuatmu ragu, dan kerjakanlah sesuatu yang tidak membuatmu ragu.” \n \n Hadist Riwayat At Tirmidzi dan An Nasa’i. At Tirmidzi berkata: Bahwa hadits ini derajatnya hasan shahih.",
+  },
+  {
+    id: "12",
+    judul: "Meninggalkan Perkara yang tidak Bermanfaat",
+    arab:
+      "عَنْ أَبِيْ هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُوْلُ اللهِ  صلى الله عليه وسلّم : (مِنْ حُسْنِ إِسْلامِ المَرْءِ تَرْكُهُ مَا لاَيَعْنِيْهِ) حَدِيْثٌ حَسَنٌ، رَوَاهُ التِّرْمِذِي وَغَيْرُهُ هَكَذَا.",
+    terjemah:
+      "Dari Abu Hurairah radhiyallahu ‘anhu, dia berkata: “Rasulullah shallallahu ‘alaihi wa sallam bersabda: \n \n  ”Termasuk kebaikan Islam seseorang adalah dia meninggalkan perkara yang tidak bermanfaat baginya.” \n \n Hadits Hasan, diriwayatkan oleh At Tirmidzi dan selainnya seperti ini.",
+  },
+  {
+    id: "13",
+    judul: "Mencintai Kebaikan untuk Saudaranya",
+    arab:
+      "عَنْ أَبِيْ حَمْزَة أَنَسِ بْنِ مَالِكٍ رَضِيَ اللهُ تَعَالَى عَنْهُ خَادِمِ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ عَنْ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ قَالَ: (لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيْهِ مَا يُحِبُّ لِنَفْسِهِ) رَوَاهُ اْلبُخَارِيّ وَمُسْلِمٌ",
+    terjemah:
+      "Dari Abu Hamzah –Anas bin Malik radhiyallahu ‘anhu– pembantu Rasulullah, dari Nabi shallallahu ‘alaihi wa sallam, beliau bersabda: \n \n ”Tidaklah salah seorang di antara kalian beriman (dengan keimanan yang sempurna) sampai dia mencintai untuk saudaranya apa yang ia cintai untuk dirinya sendiri.” \n \n Hadist Riwayat Al Bukhari dan Muslim.",
+  },
+  {
+    id: "14",
+    judul: "Tidak Halal Darah seorang Muslim",
+    arab:
+      "عَنِ ابْنِ مَسْعُودٍ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُوْلُ اللهِ: (لاَ يَحِلُّ دَمُ امْرِئٍ مُسْلِمٍ إِلاَّ بإِحْدَى ثَلاثٍ: الثَّيِّبُ الزَّانِيْ، وَالنَّفْسُ بِالنَّفْسِ، وَالتَّاركُ لِدِيْنِهِ المُفَارِقُ للجمَاعَةِ) رَوَاهُ اْلبُخَارِي وَمُسْلِمٌ",
+    terjemah:
+      "Dari Ibnu Mas’ud radhiyallahu ‘anhu, ia berkata: Rasulullah shallallahu ‘alaihi wa sallam bersabda: \n \n  ”Tidak halal darah seorang muslim (untuk ditumpahkan) kecuali karena salah satu dari 3 perkara: tsayyib (orang yang sudah menikah) yang berzina, jiwa dengan jiwa (qishash) dan orang yang meninggalkan agamanya (murtad) serta memisahkan diri dari jama’ah (kaum muslimin).” \n \n Hadist Riwayat al Bukhari dan Muslim.",
+  },
+  {
+    id: "15",
+    judul: "Barangsiapa Beriman kepada Allah dan Hari Akhir",
+    arab:
+      "عَن أَبِي هُرَيْرَةَ رضي الله عنه قَالَ: قَالَ رَسُولَ اللهِ صلى الله عليه وسلم: (مَنْ كَانَ يُؤمِنُ بِاللهِ وَاْليَوْمِ الآخِرِ فَلْيَقُلْ خَيْراً أَو لِيَصْمُتْ، وَمَنْ كَانَ يُؤمِنُ بِاللهِ وَاْليَومِ الآخِرِ فَلاَ يُؤْذِ جَارَهُ، ومَنْ كَانَ يُؤمِنُ بِاللهِ واليَومِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ) رَوَاهُ اْلبُخَارِي وَمُسْلِمٌ",
+    terjemah:
+      "Dari Abu Hurairah radhiyallahu ‘anhu dia berkata, Rasulullah shallallahu ‘alaihi wa sallam bersabda: \n \n ”Barangsiapa yang beriman kepada Allah subhanahu wa ta’ala dan hari akhir maka hendaknya dia berbicara yang baik atau (kalau tidak bisa hendaknya) dia diam. Barangsiapa yang beriman kepada Allah dan hari akhir maka janganlah ia menyakiti tetangganya. Barangsiapa yang beriman kepada Allah dan hari akhir maka hendaknya dia memuliakan tamunya.” \n \n Hadist Riwayat al Bukhari dan Muslim",
+  },
+  {
+    id: "16",
+    judul: "Janganlah Engkau Marah",
+    arab:
+      "عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ أَنَّ رَجُلاً قَالَ لِلنَّبيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ: أَوْصِنِيْ، قَالَ: لاَ تَغْضَبْ. فَرَدَّدَ مِرَارًا قَالَ لاَ تَغْضَبْ (رَوَاهُ اْلبُخَارِيّ)",
+    terjemah:
+      "Dari Abu Hurairah radhiyallahu ‘anhu bahwasanya ada seseorang yang berkata kepada Nabi shallallahu ‘alaihi wa sallam: \n \n  ”Berilah aku nasihat.” Beliau shallallahu ‘alaihi wa sallam bersabda: ”Janganlah engkau marah.” Diapun mengulanginya beberapa kali, beliau shallallahu ‘alaihi wa sallam bersabda: ”Janganlah engkau marah.” \n \n  Hadist Riwayat Al Bukhari.",
+  },
+  {
+    id: "17",
+    judul: "Kewajiban Berlaku Ihsan pada Segala Sesuatu",
+    arab:
+      "عَنْ أَبِي يَعْلَى شَدَّادِ بنِ أَوْسٍ رَضِيَ اللهُ تَعَالَى عَنْهُ عَنْ رَسُولِ اللهِ صلى الله عليه وسلّم قَالَ: (إِنَّ اللهَ كَتَبَ الإِحْسَانَ عَلَى كُلِّ شَيءٍ. فَإِذَا قَتَلْتُمْ فَأَحْسِنُوْا اْلقِتْلَةَ، وَإِذَا ذَبَحْتُمْ فَأَحْسِنُوْا الذِّبْحَةَ، وَلْيُحِدَّ أَحَدُكُمْ شَفْرَتَهُ، وَلْيُرِحْ ذَبِيْحَتَهُ) رَوَاهُ مُسْلِمٌ",
+    terjemah:
+      "Dari Abu Ya’la Syaddad bin Aus radhiyallahu ‘anhu dari Rasulullah shallallahu ‘alaihi wa sallam, beliau bersabda: \n \n ”Sesungguhnya Allah subhanahu wa ta’ala telah menetapkan perbuatan ihsan (baik) pada tiap-tiap sesuatu. Jika kalian membunuh, maka bunuhlah dengan cara yang baik, jika kalian menyembelih, maka sembelihlah dengan cara yang baik, hendaklah salah seorang di antara kalian menajamkan pisaunya dan menenangkan sembelihannya. \n \n Hadist Riwayat Muslim",
+  },
+  {
+    id: "18",
+    judul: "Bertakwalah di manapun Engkau Berada",
+    arab:
+      "عَنْ أَبِيْ ذَرٍّ جُنْدُبِ بنِ جُنَادَةَ وَأَبِي عَبْدِ الرَّحْمَنِ مُعَاذِ بِنِ جَبَلٍ رَضِيَ اللهُ عَنْهُمَا عَنْ رَسُولِ اللهِ صلى الله عليه وسلم قَالَ: (اتَّقِ اللهَ حَيْثُمَا كُنْتَ، وَأَتْبِعِ السَّيِّئَةَ الحَسَنَةَ تَمْحُهَا، وَخَالِقِ النَّاسَ بِخُلُقٍ حَسَنٍ) رَوَاهُ التِّرْمِذِيّ وَقَالَ: حَدِيْثٌ حَسَنٌ. وَفِيْ بَعْضِ النَّسَخِ: حَسَنٌ صَحِيْحٌ.",
+    terjemah:
+      "Dari Abu Dzar Jundub bin Junadah dan Abu ‘Abdirrahman Mu’adz bin Jabal radhiyallahu ‘anhuma, dari Rasulullah shallallahu ‘alaihi wa sallam beliau bersabda: \n \n ”Bertakwalah kepada Allah subhanahu wa ta’ala di manapun engkau berada. Iringilah kejelekan itu dengan kebaikan niscaya kebaikan itu akan menghapusnya (kejelekan). Dan pergaulilah manusia dengan pergaulan yang baik.” \n \n Hadist Riwayat at Tirmidzi, dan ia berkata bahwa hadits ini hasan. Di sebagian naskah hadits hadits ini hasan shahih.",
+  },
+  {
+    id: "19",
+    judul: "Jagalah Allah niscaya Allah Menjagamu",
+    arab:
+      "عَنْ أَبِي الْعَبَّاسِ عَبْدِ اللهِ بنِ عَبَّاسٍ رضي الله عنهما قَالَ: كُنْتُ خَلْفَ رَسُوْلَ اللَّهِ صلى الله عليه وسلّم فَقَالَ: (يَا غُلاَمُ إِنّي أُعَلِّمُكَ كَلِمَاتٍ: احْفَظِ اللهَ يَحفَظْكَ، احْفَظِ اللهَ تَجِدْهُ تُجَاهَكَ، إِذَاَ سَأَلْتَ فَاسْأَلِ اللهَ، وَإِذَاَ اسْتَعَنتَ فَاسْتَعِن بِاللهِ، وَاعْلَم أَنَّ الأُمَّةَ لَوِ اجْتَمَعَت عَلَى أن يَنفَعُوكَ بِشيءٍ لَمْ يَنْفَعُوكَ إِلا بِشيءٍ قَد كَتَبَهُ اللهُ لَك، ولَوِ اِجْتَمَعوا عَلَى أَنْ يَضُرُّوكَ بِشيءٍ لَمْ يَضروك إلا بشيءٍ قَد كَتَبَهُ اللهُ عَلَيْكَ، رُفعَت الأَقْلامُ، وَجَفّتِ الصُّحُفُ) رَوَاهُ التِّرْمِذِيّ وَقَالَ: حَدِيْثٌ حَسَنٌ صَحِيْحٌ \n \n وَفِي رِوَايَةِ غَيْرِ التِّرْمِذِيّ: (اِحفظِ اللهَ تَجٍدْهُ أَمَامَكَ، تَعَرَّفْ إلى اللهِ في الرَّخاءِ يَعرِفْكَ في الشّدةِ، وَاعْلَم أن مَا أَخطأكَ لَمْ يَكُن لِيُصيبكَ، وَمَا أَصَابَكَ لَمْ يَكُن لِيُخطِئكَ، وَاعْلَمْ أنَّ النَّصْرَ مَعَ الصَّبْرِ، وَأَنَّ الفَرَجَ مَعَ الكَربِ، وَأَنَّ مَعَ العُسرِ يُسراً) ",
+    terjemah:
+      "Dari Abul ‘Abbas Abdullah bin ‘Abbas radhiyallahu ‘anhuma, dia berkata: Suatu hari aku pernah berboncengan bersama Nabi shallallahu ‘alaihi wa sallam, lalu beliau bersabda: \n \n ”Wahai anak kecil, sungguh aku akan mengajarimu beberapa kalimat: ‘Jagalah Allah, niscaya Dia akan menjagamu, jagalah Allah niscaya engkau akan mendapati-Nya di hadapanmu. Apabila kamu meminta sesuatu mintalah kepada Allah, apabila engkau memohon pertolongan maka mintalah kepada Allah. Ketahuilah, kalau seandainya umat manusia bersatu untuk memberikan kemanfaatan kepadamu dengan sesuatu, niscaya mereka tidak akan mampu memberi manfaat kepadamu kecuali dengan sesuatu yang telah Allah tentukan untukmu, dan kalau seandainya mereka bersatu untuk menimpakan bahaya kepadamu dengan sesuatu, niscaya tidak akan membahayakanmu kecuali dengan sesuatu yang telah Allah tetapkan akan menimpamu. Pena-pena telah diangkat dan lembaran-lembaran telah kering.” (HR. at Tirmidzi, dan dia berkata hadits ini hasan shahih) \n \n Dalam riwayat selain riwayat at Tirmidzi, dengan lafadz: ”Jagalah Allah niscaya engkau akan mendapati-Nya di hadapanmu, ingatlah Allah dalam keadaan engkau lapang, niscaya Dia akan mengingatmu dalam keadaan engkau sulit. Dan ketahuilah, bahwa segala sesuatu yang Allah tetapkan luput darimu, niscaya tidak akan pernah menimpamu. Dan segala sesuatu yang telah ditetapkan menimpamu, maka tidak akan luput darimu. Ketahuilah, bahwa pertolongan itu bersama kesabaran dan kelapangan itu bersama kesulitan dan bersama kesukaran itu ada kemudahan.” \n \n Diriwayatkan oleh Tirmidzi (2516) \n \n Diriwayatkan oleh Ahmad dalam al Musnad (1/307), Hannad dalam az Zuhdu (1/304), ‘Abd bin Humaid dalam Musnadnya (hal. 214), ath Thabarani dalam al Kabir (11243), al Hakim dalam al Mustadrak (3/623), al Lalika’i dalam I’tiqad Ahlis Sunnah (4/614) dan al Baihaqi dalam Syu’abul Iman (2/27)",
+  },
+  {
+    id: "20",
+    judul: "Jika Engkau tidak Malu maka Berbuatlah Sesukamu",
+    arab:
+      "عَنْ أَبيْ مَسْعُوْدٍ عُقْبَةَ بْنِ عَمْرٍو الأَنْصَارِيِّ البَدْرِيِّ  رضي الله عنه قَالَ: قَالَ رَسُوْلُ اللهِ: صلى الله عليه وسلّم (إِنَّ مِمَّا أَدْرَكَ النَّاسُ مِنْ كَلاَمِ النُّبُوَّةِ الأُولَى إِذا لَم تَستَحْيِ فاصْنَعْ مَا شِئْتَ) رَوَاهُ اْلبُخَارِيّ",
+    terjemah:
+      "Dari Abu Mas’ud ‘Uqbah bin ‘Amr Al Anshari Al Badri radhiyallahu ‘anhu dia berkata: \n \n ‘Rasulullah shallallahu ‘alaihi wa sallam bersabda: ”Sesungguhnya termasuk perkara yang didapati oleh manusia dari perkataan nubuwwah (kenabian) yang pertama adalah jika engkau tidak malu maka berbuatlah sesukamu.” \n \n Diriwayatkan oleh al Bukhari (6120)",
+  },
   // {
   //   id: "21",
   //   judul: "",

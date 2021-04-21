@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { MathuratPagiScreen } from "../screens";
-import { styles, basic, danger } from "../styles";
+import { styles, basic } from "../styles";
 
 const Stack = createStackNavigator();
 
