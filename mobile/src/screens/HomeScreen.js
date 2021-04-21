@@ -54,14 +54,18 @@ export default function HomeScreen() {
           <FontAwesome name="cog" size={30} style={styles.home_setting} />
         </TouchableOpacity>
       </View>
-      <FlatList
-        numColumns={2}
-        data={title}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <ButtonMenu title={item.name} logo={item.logo} />
-        )}
-      />
+      <View style={styles.home_menu}>
+        <FlatList
+          numColumns={2}
+          data={title}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ paddingVertical: 10 }}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <ButtonMenu title={item.name} logo={item.logo} />
+          )}
+        />
+      </View>
     </View>
   );
 }

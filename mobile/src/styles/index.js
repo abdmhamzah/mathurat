@@ -41,6 +41,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: screenWidth / 22,
     paddingTop: 60,
     backgroundColor: primary,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+    height: screenHeight / 3,
+  },
+  home_menu: {
+    flex: 9,
   },
   home_title: {
     flex: 1,
@@ -139,7 +151,7 @@ const styles = StyleSheet.create({
   header: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+    // alignItems: "center",
     width: screenWidth - 70,
     marginTop: 10,
     paddingVertical: 10,
@@ -180,6 +192,15 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: "left",
     marginTop: 20,
+  },
+  info_menu: {
+    marginBottom: 20,
+    marginTop: 10,
+    color: basic,
+    paddingHorizontal: 25,
+    textAlign: "center",
+    fontFamily: "circular",
+    fontSize: 18,
   },
   terjemah: {
     marginBottom: 20,

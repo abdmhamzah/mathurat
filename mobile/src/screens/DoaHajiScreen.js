@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
 
-export default function DohaHajiScreen(props) {
-  return <Text>DohaHajiScreen</Text>;
+export default function DoaHajiScreen(props) {
+  return <Text>DoaHajiScreen</Text>;
 }

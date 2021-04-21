@@ -37,7 +37,7 @@ export default function HadistScreen() {
             style={styles.button_list}
           >
             <Text style={styles.title}>Hadist ke-{item.id}</Text>
-            <Text style={styles.terjemah}>{item.judul}</Text>
+            <Text style={styles.info_menu}>{item.judul}</Text>
           </TouchableOpacity>
         )}
       />
