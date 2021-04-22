@@ -11,14 +11,16 @@ export default function Card(props) {
     circular: require("../fonts/lineto-circular-book.ttf"),
   });
 
-  const [isKubro, setIsKubro] = useState(false);
-  const [isCc, setIsCc] = useState(false);
   const [isTranslate, setIsTranslate] = useState(false);
 
   async function getTranslate() {
-    const jsonValue = await AsyncStorage.getItem("translate");
-    const { value } = JSON.parse(jsonValue);
-    setIsTranslate(value);
+    try {
+      const jsonValue = await AsyncStorage.getItem("translate");
+      const { value } = JSON.parse(jsonValue);
+      return jsonValue != null ? setIsTranslate(value) : null;
+    } catch (e) {
+      // error reading value
+    }
   }
 
   useEffect(() => {

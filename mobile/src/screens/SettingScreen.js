@@ -15,21 +15,33 @@ export default function Setting() {
   const [isTranslate, setIsTranslate] = useState(false);
 
   async function getTranslate() {
-    const jsonValue = await AsyncStorage.getItem("translate");
-    const { value } = JSON.parse(jsonValue);
-    setIsTranslate(value);
+    try {
+      const jsonValue = await AsyncStorage.getItem("translate");
+      const { value } = JSON.parse(jsonValue);
+      return jsonValue != null ? setIsTranslate(value) : null;
+    } catch (e) {
+      // error reading value
+    }
   }
 
   async function getKubro() {
-    const jsonValue = await AsyncStorage.getItem("kubro");
-    const { value } = JSON.parse(jsonValue);
-    setIsKubro(value);
+    try {
+      const jsonValue = await AsyncStorage.getItem("kubro");
+      const { value } = JSON.parse(jsonValue);
+      return jsonValue != null ? setIsKubro(value) : null;
+    } catch (e) {
+      // error reading value
+    }
   }
 
   async function getCc() {
-    const jsonValue = await AsyncStorage.getItem("cc");
-    const { value } = JSON.parse(jsonValue);
-    setIsCc(value);
+    try {
+      const jsonValue = await AsyncStorage.getItem("cc");
+      const { value } = JSON.parse(jsonValue);
+      return jsonValue != null ? setIsCc(value) : null;
+    } catch (e) {
+      // error reading value
+    }
   }
 
   function changeTranslate() {

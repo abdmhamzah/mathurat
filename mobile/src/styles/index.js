@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   judul: {
-    flex: 1,
+    flex: 2,
     textAlign: "right",
     fontSize: 18,
     color: warning,
