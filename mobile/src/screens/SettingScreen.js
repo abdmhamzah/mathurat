@@ -84,7 +84,8 @@ export default function Setting() {
           />
         </View>
       </View>
-      <View style={styles.setting_item}>
+      {/* To be Continued */}
+      {/* <View style={styles.setting_item}>
         <Text style={styles.setting_title}>Tampilkan Transliterasi</Text>
         <View style={styles.setting_switch}>
           <Switch
@@ -93,7 +94,7 @@ export default function Setting() {
             trackColor={{ true: danger }}
           />
         </View>
-      </View>
+      </View> */}
       <View style={styles.setting_item}>
         <Text style={styles.setting_title}>Tampilkan Artinya</Text>
         <View style={styles.setting_switch}>

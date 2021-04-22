@@ -1,24 +1,33 @@
 export const dataMathuratSughraSore = [
   {
     id: "1",
-    judul: "Al-Fatihah 1-7",
+    judul: "Ta'awudz",
     arab:
-      "أَعُوْذُ بِاللّٰهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ ۞ اَلْحَمْدُ لِلَّـهِ رَبِّ الْعَالَمِينَ ۞ اَلرَّحْمَـٰنِ الرَّحِيمِ ۞ مَالِكِ يَوْمِ الدِّينِ ۞ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۞ اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۞ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ",
+      "أَعُوْذُ بِاللّٰهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ",
     terjemah:
-      "Aku berlindung kepada Allah Yang Maha Mendengar lagi Maha Mengetahui dari godaan setan yang terkutuk Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang. Segala puji bagi Allah, Tuhan semesta alam. Maha Pemurah lagi Maha Penyayang. Yang menguasai hari pembalasan. Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan. Tunjukilah kami jalan yang lurus. (yaitu) jalan orang-orang yang telah Engkau anugerahkan ni`mat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.",
+      "Aku berlindung kepada Allah Yang Maha Mendengar lagi Maha Mengetahui dari godaan setan yang terkutuk.",
     pengulangan: 1,
   },
   {
     id: "2",
+    judul: "Al-Fatihah 1-7",
+    arab:
+      "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ \n اَلْحَمْدُ لِلَّـهِ رَبِّ الْعَالَمِينَ ۞ اَلرَّحْمَـٰنِ الرَّحِيمِ ۞ مَالِكِ يَوْمِ الدِّينِ ۞ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۞ اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۞ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ",
+    terjemah:
+      "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang. Segala puji bagi Allah, Tuhan semesta alam. Maha Pemurah lagi Maha Penyayang. Yang menguasai hari pembalasan. Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan. Tunjukilah kami jalan yang lurus. (yaitu) jalan orang-orang yang telah Engkau anugerahkan ni`mat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.",
+    pengulangan: 1,
+  },
+  {
+    id: "3",
     judul: "Al-Baqarah 1-5",
     arab:
-      "الٓمٓ ۞ ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ ۞ اَلَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ ۞ وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِالْأَخِرَةِ هُمْ يُوقِنُونَ ۞ أُولَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ",
+      "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ \n الٓمٓ ۞ ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ ۞ اَلَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ ۞ وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِالْأَخِرَةِ هُمْ يُوقِنُونَ ۞ أُولَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ",
     terjemah:
       "Alif Laam Miim. Kitab (Al Qur’an) ini tidak ada keraguan padanya;petunjuk bagi mereka yang bertaqwa, (yaitu) mereka yang beriman kepada yang gaib,  yang mendirikan shalat dan menafkahkan sebahagian rezki yang Kami anugerahkan kepada mereka, dan mereka yang beriman kepada Kitab (Al Qur’an) yang telah diturunkan kepadamu dan Kitab-kitab yang telah diturunkan sebelummu, serta mereka yakin akan adanya (kehidupan) akhirat. Mereka itulah yang tetap mendapat petunjuk dari Tuhan mereka, dan merekalah orang-orang yang beruntung.",
     pengulangan: 1,
   },
   {
-    id: "3",
+    id: "4",
     judul: "Al-Baqarah 255",
     arab:
       "اَللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا ٱلَّذِي يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ ۥحِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
@@ -27,7 +36,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 1,
   },
   {
-    id: "4",
+    id: "5",
     judul: "Al-Baqarah 256-257",
     arab:
       "لَآ إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ ۚ فَمَن يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِن ۢ بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ ٱلْوُثْقَىٰ لَا ٱنفِصَامَ لَهَا ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ ۞ اَللَّهُ وَلِيُّ الَّذِينَ ءَامَنُواْ يُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ ۖ وَ ٱلَّذِينَ كَفَرُوٓاْ  أَوْلِيَآؤُهُمُ ٱلطَّاغُوتُ يُخْرِجُونَهُم مِّنَ ٱلنُّورِ إِلَى ٱلظُّلُمَاتِ ۗ أُولَٰٓئِكَ أَصْحَابُ ٱلنَّارِ ۖ هُمْ فِيهَا خَالِدُونَ",
@@ -36,7 +45,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 1,
   },
   {
-    id: "5",
+    id: "6",
     judul: "Al-Baqarah 284-285",
     arab:
       "لِلَّهِ مَا فِي السَّمَٰوَاتِ وَمَا فِي الْأَرْضِ ۗ وَإِنْ تُبْدُواْ مَا فِيٓ أَنْفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُمْ بِهِ اللَّهُ ۖ فَيَغْفِرُ لِمَنْ يَشَآءُ وَ يُعَذِّبُ مَنْ يَشَآءُ ۗ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ ۞ ءَامَنَ الرَّسُولُ بِمَآ اُنْزِلَ إِلَيْهِ مِنْ رَّ بِّهِ  ۦ وَالْمُؤْمِنُونَ ۚ كُلٌّ ءَامَنَ بِاللَّهِ وَمَلَــٰٓـئِكَتِهِ  ۦ وَكُتُبِهِ  ۦ وَرُسُلِهِ  ۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ  ۚۦ وَقَالُواْ سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَ بَّنَا وَإِلَيْكَ الْمَصِيرُ",
@@ -45,16 +54,16 @@ export const dataMathuratSughraSore = [
     pengulangan: 1,
   },
   {
-    id: "6",
+    id: "7",
     judul: "Al-Baqarah 286",
     arab:
       "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَ بَّنَا لَا تُؤَاخِذْنَآ إِنْ نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُ, عَلَى الَّذِينَ مِنْ قَبْلِنَا ۚ رَ بَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ  ۦۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَآ ۚ أَنْتَ مَوْلَـٰـنَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِ ينَ",
     terjemah:
-      "Allah tidak membebani seseorang melainkan sesuai  dengan kesanggupannya. Ia mendapat pahala (dari kebajikan) yang diusahakannya dan ia mendapat siksa (dari  kejahatan) yang dikerjakannya. (Mereka berdo`a): “Ya Tuhan kami, janganlah Engkau hukum kami jika kami lupa atau kami tersalah. Ya Tuhan kami, janganlah Engkau bebankan kepada kami beban yang berat sebagaimana Engkau bebankan kepada orang-orang yang sebelum kami. Ya Tuhan kami, janganlah Engkau pikulkan kepada kami apa yang tak sanggup kami memikulnya. Beri maaflah kami; ampunilah kami; dan rahmatilah kami. Engkaulah Penolong kami, maka tolonglah kami terhadap kaum yang kafir",
+      "Allah tidak membebani seseorang melainkan sesuai  dengan kesanggupannya. Ia mendapat pahala (dari kebajikan) yang diusahakannya dan ia mendapat siksa (dari  kejahatan) yang dikerjakannya. (Mereka berdo`a): “Ya Tuhan kami, janganlah Engkau hukum kami jika kami lupa atau kami tersalah. Ya Tuhan kami, janganlah Engkau bebankan kepada kami beban yang berat sebagaimana Engkau bebankan kepada orang-orang yang sebelum kami. Ya Tuhan kami, janganlah Engkau pikulkan kepada kami apa yang tak sanggup kami memikulnya. Beri maaflah kami; ampunilah kami; dan rahmatilah kami. Engkaulah Penolong kami, maka tolonglah kami terhadap kaum yang kafir.",
     pengulangan: 1,
   },
   {
-    id: "7",
+    id: "8",
     judul: "Al-Ikhlas 1-4",
     arab:
       "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ \n قُلْ هُوَ ٱللَّهُ أَحَدٌ ۞ اَللَّهُ ٱلصَّمَدُ ۞ لَمْ يَلِدْ وَلَمْ يُولَدْ ۞ وَلَمْ يَكُن لَّهُ ۥ كُفُوًا أَحَدُ ۢ",
@@ -63,7 +72,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "8",
+    id: "9",
     judul: "Al-Falaq 1-5",
     arab:
       "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ \n قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۞ مِن شَرِّ مَا خَلَقَ ۞ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۞ وَمِن شَرِّ ٱلنَّفَّاثَاتِ فِي ٱلْعُقَدِ ۞ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ",
@@ -72,7 +81,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "9",
+    id: "10",
     judul: "An-Naas 1-6",
     arab:
       "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ \n قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۞ مَلِكِ ٱلنَّاسِ ۞ إِلَٰهِ ٱلنَّاسِ ۞ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۞ اَلَّذِي يُوَسْوِسُ فِي صُدُورِ ٱلنَّاسِ ۞ مِنَ ٱلْجِنَّةِ وَ ٱلنَّاسِ",
@@ -81,43 +90,43 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "10",
+    id: "11",
     judul: "Doa Petang",
     arab:
       "اَمْسَيْنَا وَاَمْسَى الْمُلْكُ لِلَّهِ وَ الْحَمْدُ لِلَّهِ لَاشَرِيْكَ لَهُ, لَاإِلَهَ إِلَّا هُوَ وَإِلَيْهِ الْمَصِيْرُ",
     terjemah:
-      "Kami bersore hari dan bersore hari pula kerajaan milik Allah. Segala puji bagi Allah, tiada sekutu bagi-Nya, tiada Tuhan melainkan Dia, dan pada-Nya tempat kembali",
-    pengulangan: 3,
-  },
-  {
-    id: "11",
-    judul: "Doa Petang",
-    arab:
-      "أَمْسَيْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ وَكَلِمَةِ الْإِخْلَاصِ وَعَلَىٰ دِيْنِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَىٰ مِلَّةِ أَبِيْنَا إِبْرَٰ هِيْمَ حَنِيْفًا وَمَا كَانَ مِنَ الْمُشْرِكِيْنَ",
-    terjemah:
-      "Kami bersore hari di atas fitrah Islam, di atas kalimat ikhlash, di atas agama nabi Muhammad SAW, dan di atas milah (agama) bapak kami; Ibrahim yang hanif. Dan ia bukan termasuk golongan orang-orang yang musyrik",
+      "Kami bersore hari dan bersore hari pula kerajaan milik Allah. Segala puji bagi Allah, tiada sekutu bagi-Nya, tiada Tuhan melainkan Dia, dan pada-Nya tempat kembali.",
     pengulangan: 3,
   },
   {
     id: "12",
     judul: "Doa Petang",
     arab:
-      "اَللَّهُمَّ اِنِّيْ أَمْسَيْتُ مِنْكَ فِيْ نِعْمَةٍ وَعَافِيَةٍ وَسِتْرٍ, فَاَتِمَّ عَلَيَّ نِعْمَتَكَوَعَافِيَتِكَ وَسِتْرَكَ فِي الدُّنْيَا وَالْاٰخِرَةِ",
+      "أَمْسَيْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ وَكَلِمَةِ الْإِخْلَاصِ وَعَلَىٰ دِيْنِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَىٰ مِلَّةِ أَبِيْنَا إِبْرَٰ هِيْمَ حَنِيْفًا وَمَا كَانَ مِنَ الْمُشْرِكِيْنَ",
     terjemah:
-      "Ya Allah, sesungguhnya kami bersore hari dari-Mu dalam kenikmatan, kesehatan dan perlindungan. Maka sempurnakanlah bagi kami kenikmatan, kesehatan dan perlindungan-Mu di dunia dan akhirat",
+      "Kami bersore hari di atas fitrah Islam, di atas kalimat ikhlash, di atas agama nabi Muhammad ﷺ, dan di atas milah (agama) bapak kami; Ibrahim yang hanif. Dan ia bukan termasuk golongan orang-orang yang musyrik.",
     pengulangan: 3,
   },
   {
     id: "13",
     judul: "Doa Petang",
     arab:
-      "اَللَّهُمَّ مَاأَمْسَى بِيْ مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَلاَشَرِيْكَ لَكَ, فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ",
+      "اَللَّهُمَّ اِنِّيْ أَمْسَيْتُ مِنْكَ فِيْ نِعْمَةٍ وَعَافِيَةٍ وَسِتْرٍ, فَاَتِمَّ عَلَيَّ نِعْمَتَكَوَعَافِيَتِكَ وَسِتْرَكَ فِي الدُّنْيَا وَالْاٰخِرَةِ",
     terjemah:
-      "Ya Allah, segala kenikmatan yang bersore hari (terjadi) bersamaku atau bersama salah satu dari makhluk-Mu, adalah dari-Mu semata; tiada sekutu bagi-Mu. Maka bagi-Mu segala puji dan bagi-Mu rasa syukur",
+      "Ya Allah, sesungguhnya kami bersore hari dari-Mu dalam kenikmatan, kesehatan dan perlindungan. Maka sempurnakanlah bagi kami kenikmatan, kesehatan dan perlindungan-Mu di dunia dan akhirat.",
     pengulangan: 3,
   },
   {
     id: "14",
+    judul: "Doa Petang",
+    arab:
+      "اَللَّهُمَّ مَاأَمْسَى بِيْ مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَلاَشَرِيْكَ لَكَ, فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ",
+    terjemah:
+      "Ya Allah, segala kenikmatan yang bersore hari (terjadi) bersamaku atau bersama salah satu dari makhluk-Mu, adalah dari-Mu semata; tiada sekutu bagi-Mu. Maka bagi-Mu segala puji dan bagi-Mu rasa syukur.",
+    pengulangan: 3,
+  },
+  {
+    id: "15",
     judul: "Dzikir Pujian",
     arab:
       "يَا رَبِّي لَكَ الْحَمْدُ كَمَا يَنْبَغِيْ لِجَلَالِ وَجْهِكَ وَعَظِيْمِ سُلْطَانِكَ",
@@ -126,16 +135,16 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "15",
+    id: "16",
     judul: "Doa Ridha",
     arab:
       "رَضِيْتُ بِاللَّهِ رَ بًّا وَبِالْإِسْلَامِ دِيْنًا وَبِمُحَمَّدٍ نَبِيًّا وَرَسُوْلاً",
     terjemah:
-      "Aku ridha Allah sebagai Rabb, Islam sebagai agama, dan Muhammad sebagai Rasul.",
+      "Aku ridha Allah sebagai Rabb, Islam sebagai agama, dan Muhammad ﷺ sebagai Rasul.",
     pengulangan: 3,
   },
   {
-    id: "16",
+    id: "17",
     judul: "Dzikir Tasbih",
     arab:
       "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَا نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
@@ -144,7 +153,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "17",
+    id: "18",
     judul: "Doa Perlindungan Dari Musibah",
     arab:
       "بِسْمِ اللَّهِ الَّذِ لَايَضُرُّ مَعَ اسْمِهِ شَيْئٌ فِي الْأَرْضِ وَلَا فِي السَّمَآءِ وَهُوَ السَّمِيْعُ الْعَلِيْمُ",
@@ -153,7 +162,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "18",
+    id: "19",
     judul: "Doa Agar Terhindar Dari Syirik",
     arab:
       "اَللَّهُمَّ إِنَّا نَعُوْذُبِكَ مِنْ أَنْ نُشْرِكَ بِكَ شَيْئًا نَعْلَمُهُ وَنَسْتَغْفِرُكَ لِمَا لَانَعْلَمُهُ",
@@ -162,7 +171,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "19",
+    id: "20",
     judul: "Doa Perlindungan Dari Keburukan",
     arab: "أَعُوْذُ بِكَلِمَاتِ اللَّهِ التَّآمَّاتِ مِنْ شَرِّ مَا خَلَقَ",
     terjemah:
@@ -170,7 +179,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "20",
+    id: "21",
     judul: "Doa Agar Terhindar Dari Kesulitan",
     arab:
       "اللَّهُمَّ إِنِّي أَعُوْذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَأَعُوْذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ وَأَعُوْذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ وَأَعُوْذُ بِكَ مِنْ غَلَبَةِ الْدَّيْنِ وَقَهْرِالْرِّجَالِ",
@@ -179,25 +188,25 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "21",
+    id: "22",
     judul: "Doa Memohon Kesehatan",
     arab:
       "اَللَّهُمَّ عَافِنِيْ فِيْ بَدَنِيْ, اَللَّهُمَّ عَافِنِيْ فِيْ سَمْعِيْ, اَللَّهُمَّ عَافِنِيْ فِيْ بَصَرِيْ",
     terjemah:
-      "Ya Allah berikanlah kesehatan bagi badanku, bagi pendengaranku, bagi penglihatanku",
-    pengulangan: 3,
-  },
-  {
-    id: "22",
-    judul: "Doa Perlindungan Dari Kekufuran",
-    arab:
-      "اَللَّهُمَّ إِنِّ أَعُوْذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ اَللَّهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ الْقَبْرِ, لَآ إِلَهَ إِلَّا أَنْتَ",
-    terjemah:
-      "Ya Allah sungguh aku berlindung kepadaMu dari kekufuran dan kefaqiran, Ya Allah sungguh aku berlindung kepadaMu dari azab kubur, tidak ada Ilah kecuali Engkau",
+      "Ya Allah berikanlah kesehatan bagi badanku, bagi pendengaranku, bagi penglihatanku.",
     pengulangan: 3,
   },
   {
     id: "23",
+    judul: "Doa Perlindungan Dari Kekufuran",
+    arab:
+      "اَللَّهُمَّ إِنِّ أَعُوْذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ اَللَّهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ الْقَبْرِ, لَآ إِلَهَ إِلَّا أَنْتَ",
+    terjemah:
+      "Ya Allah sungguh aku berlindung kepadaMu dari kekufuran dan kefaqiran, Ya Allah sungguh aku berlindung kepadaMu dari azab kubur, tidak ada Ilah kecuali Engkau.",
+    pengulangan: 3,
+  },
+  {
+    id: "24",
     judul: "Sayyidul Istighfar",
     arab:
       "اَللَّهُمَّ أَنْتَ رَبِّيْ لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِيْ وَأَنَا عَبْدُكَ وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَاسْتَطَعْتُ أَعُوْذُبِكَ مِنْ شَرِّ مَا صَنَعْتُ أَبُوْءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَ أَبُوْءُ لَكَ  بِذَنْبِيْ فَاغْفِرْلِيْ فَإِنَّهُ لاَيَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ",
@@ -206,7 +215,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 1,
   },
   {
-    id: "24",
+    id: "25",
     judul: "Istighfar Taubat",
     arab:
       "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِيْ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ",
@@ -215,25 +224,25 @@ export const dataMathuratSughraSore = [
     pengulangan: 3,
   },
   {
-    id: "25",
+    id: "26",
     judul: "Shalawat Nabi",
     arab:
       "اَللَّهُمَّ صَلِّ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٓ اٰلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَىٰ اٰلِ سَيِّدِنَا إِبْرَاهِيْمَ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ اٰلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَىٰ اٰلِ سَيِّدِنَا إِبْرَاهِيْمَ فِي الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَّجِيْدٌ",
     terjemah:
-      "Ya Allah, berikanlah shalawat kepada Muhammad ﷺ dan keluarga Muhammad ﷺ, sebagaimana telah Engkau berikan kepada Ibrahim dan keluarga Ibrahim. Berikanlah barakah kepada Muhammad ﷺ dan keluarga Muhammad ﷺ sebagaimana telah Engkau berikan kepada Ibrahim dan keluarga Ibrahim, di alam ini. Sesungguhnya Engkau Yang Maha Terpuji lagi Maha Mulia",
+      "Ya Allah, berikanlah shalawat kepada Muhammad ﷺ dan keluarga Muhammad ﷺ, sebagaimana telah Engkau berikan kepada Ibrahim dan keluarga Ibrahim. Berikanlah barakah kepada Muhammad ﷺ dan keluarga Muhammad ﷺ sebagaimana telah Engkau berikan kepada Ibrahim dan keluarga Ibrahim, di alam ini. Sesungguhnya Engkau Yang Maha Terpuji lagi Maha Mulia.",
     pengulangan: 10,
   },
   {
-    id: "26",
+    id: "27",
     judul: "Dzikir",
     arab:
       "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَآ إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ",
     terjemah:
-      "Maha Suci Allah, segala puji bagi Allah, tiada Tuhan melainkan Allah dan Allah Maha Besar",
+      "Maha Suci Allah, segala puji bagi Allah, tiada Tuhan melainkan Allah dan Allah Maha Besar.",
     pengulangan: 100,
   },
   {
-    id: "27",
+    id: "28",
     judul: "Dzikir",
     arab:
       "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَاشَرِيْكَ لَهُ, لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ",
@@ -242,16 +251,16 @@ export const dataMathuratSughraSore = [
     pengulangan: 10,
   },
   {
-    id: "28",
+    id: "29",
     judul: "Tasbih Taubat",
     arab:
       "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ أَشْهَدُ أَنْ لَّآ إِلَهَ إِلَّا أَنْتَ أَسْتَغْفِرُكَ وَاَ تُوْبُ إِلَيْكَ",
     terjemah:
-      "Maha Suci Engkau, ya Allah, dan dengan memuji-Mu, aku bersaksi bahwa tiada Tuhan melainkan Engkau, aku mohon ampun dan bertaubat kepada-Mu",
+      "Maha Suci Engkau, ya Allah, dan dengan memuji-Mu, aku bersaksi bahwa tiada Tuhan melainkan Engkau, aku mohon ampun dan bertaubat kepada-Mu.",
     pengulangan: 3,
   },
   {
-    id: "29",
+    id: "30",
     judul: "Doa Sahabat",
     arab:
       "اللَّهُمَّ صَلِّ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَنَبِيِّكَ وَرَسُوْلِكَ النَّبِيِّ الْأُمِّيِّ وَعَلَىٰ آلِهِ وَصَحْبِهِ وَسَلِّمْ تَسْلِيْمًا عَدَدَ مَا أَحَاطَ بِهِ عِلْمُكَ, وَخَطَّ بِهِ قَلَمُكَ وَأَحْصَاهُ كِتَابُكَ, وَارْضَ اللَّهُمَّ عَنْ سَادَا تِنَا أَبِيْ بَكْرٍ وَعُمَرَ وَعُثْمَانَ وَعَلِيٍّ, وَعَنِ الصَّحَابَةِ أَجْمَعِيْنَ وَعَنِ التَّابِعِيْنَ وَتَابِعِيْهِمْ بِإِحْسَانٍ إِلَى يَوْمِ الدِّيْنِ",
@@ -260,7 +269,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 1,
   },
   {
-    id: "30",
+    id: "31",
     judul: "Dzikir",
     arab:
       "سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُوْنَ وَسَلَامٌ عَلَى الْمُرْسَلِيْنَ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِيْنَ",
@@ -269,7 +278,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 1,
   },
   {
-    id: "31",
+    id: "32",
     judul: "Al-Imran 26-27",
     arab:
       "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَآءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَآءُ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ ۞ تُولِجُ الَّيْلَ فِي النَّهَارِ وَتُولِجُ النَّهَارَ فِي الَّيْلِ ۖ وَتُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَتُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ ۖ وَتَرْزُقُ مَن تَشَآءُ بِغَيْرِ حِسَابٍ",
@@ -278,7 +287,7 @@ export const dataMathuratSughraSore = [
     pengulangan: 1,
   },
   {
-    id: "32",
+    id: "33",
     judul: "Dzikir",
     arab:
       "اَللَّهُمَّ إِنَّ هَٰذَا إِقْبَالُ لَيْلِكَ وَإِدْبَارُ نَهَارِكَ وَأَصْوَاتُ دُعَاتِكَ فَاغْفِرْ لِيْ",
@@ -287,21 +296,21 @@ export const dataMathuratSughraSore = [
     pengulangan: 1,
   },
   {
-    id: "33",
+    id: "34",
     judul: "Doa Rabithah",
     arab:
       "اَللَّهُمَّ إِنَّكَ تَعْلَمُ أَنَّ هَٰذِهِ القُلُوْبَ قَدِ اجْتَمَعَتْ عَلَىٰ مَحَبَّتِكَ وَالْتَقَتْ عَلَىٰ طَاعَتِكَ وَتَوَحَّدَتْ عَلَىٰ دَعْوَتِكَ وَتَعَاهَدَتْ عَلَىٰ نُصْرَةِ شَرِ يْعَتِكَ فَوَثِّقِ اللَّهُمَّ رَابِطَتَهَا وَأَدِمْ وُدَّهَا وَاهْدِهَا سُبُلَهَا وَامْلَأْهَا بِنُورِكَ الَّذِيْ لَا يَخْبُوْ وَاشْرَحْ صُدُوْرَهَا بِفَيْضِ اْلإِيْمَانِ بِكَ وَجَمِيْلِ التَّوَكُّلِ عَلَيْكَ وَأَحْيِهَا بِمَعْرِفَتِكَ وَأَمِتْهَا عَلَى الشَّهَادَةِ فِي سَبِيْلِكَ إِنَّكَ نِعْمَ اْلمَوْلَى وَنِعْمَ النَّصِيْرُ",
     terjemah:
-      "Ya Allah, sesungguhnya Engkau MahaMengetahui bahwa hati - hati ini telah berkumpul untuk mencurahkan mahabbah hanya kepada-Mu, bertemu untuk taat kepada-Mu, bersatu dalam rangka menyeru (di jalan)-Mu, dan berjanji setia untuk membela syariat-Mu, maka kuatkanlah ikatan pertaliannya, ya Allah, abadikanlah kasih sayangnya, tunjukkkanlah jalannya dan penuhilah dengan cahaya-Mu yang tidak pernah redup, lapangkanlah dadanya dengan limpahan iman dan keindahan tawakal kepada-Mu, hidupkanlah dengan ma'rifah-Mu. Sesungguhnya Engkau sebaik - baik pelindung dan sebaik - baik penolong. Amin. Dan semoga shalawat serta salam selalu tercurah kepada Muhammad, kepada keluarganya, dan kepada semua sahabatnya.",
+      "Ya Allah, sesungguhnya Engkau MahaMengetahui bahwa hati - hati ini telah berkumpul untuk mencurahkan mahabbah hanya kepada-Mu, bertemu untuk taat kepada-Mu, bersatu dalam rangka menyeru (di jalan)-Mu, dan berjanji setia untuk membela syariat-Mu, maka kuatkanlah ikatan pertaliannya, ya Allah, abadikanlah kasih sayangnya, tunjukkkanlah jalannya dan penuhilah dengan cahaya-Mu yang tidak pernah redup, lapangkanlah dadanya dengan limpahan iman dan keindahan tawakal kepada-Mu, hidupkanlah dengan ma'rifah-Mu. Sesungguhnya Engkau sebaik - baik pelindung dan sebaik - baik penolong. Amin. Dan semoga shalawat serta salam selalu tercurah kepada Muhammad ﷺ, kepada keluarganya, dan kepada semua sahabatnya.",
     pengulangan: 1,
   },
   {
-    id: "34",
+    id: "35",
     judul: "Sholawat",
     arab:
       "اَللَّهُمَّ اٰمِيْنَ وَصَلِّ اللَّهُمَّ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ آٰلِهٖ وَصَحْبِهِ وَسَلِّمَ",
     terjemah:
-      "Sesungguhnya Engkau sebaik - baik pelindung dan sebaik - baik penolong. Amin. Dan semoga shalawat serta salam selalu tercurah kepada Muhammad, kepada keluarganya, dan kepada semua sahabatnya.",
+      "Sesungguhnya Engkau sebaik - baik pelindung dan sebaik - baik penolong. Amin. Dan semoga shalawat serta salam selalu tercurah kepada Muhammad ﷺ, kepada keluarganya, dan kepada semua sahabatnya.",
     pengulangan: 1,
   },
 ];

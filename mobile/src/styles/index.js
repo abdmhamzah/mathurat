@@ -189,12 +189,12 @@ const styles = StyleSheet.create({
     width: screenWidth,
     width: screenWidth - 40,
     marginTop: 10,
-    marginBottom: 30,
+    marginBottom: 40,
+    paddingTop: 20,
   },
   header: {
     display: "flex",
     flexDirection: "row",
-    // alignItems: "center",
     width: screenWidth - 70,
     marginTop: 10,
     paddingVertical: 10,
@@ -235,7 +235,6 @@ const styles = StyleSheet.create({
     color: danger,
     fontSize: 14,
     textAlign: "left",
-    marginTop: 20,
   },
   info_menu: {
     marginBottom: 20,
@@ -254,6 +253,7 @@ const styles = StyleSheet.create({
     textAlign: "left",
     fontFamily: "circular",
     fontSize: 18,
+    lineHeight: 30,
   },
   fadilah: {
     marginTop: 5,
