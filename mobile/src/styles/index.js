@@ -93,6 +93,11 @@ const styles = StyleSheet.create({
     textAlign: "right",
     marginRight: 5,
   },
+  home_setting_disabled: {
+    color: secondary,
+    textAlign: "right",
+    marginRight: 5,
+  },
   set_icon: {
     flex: 1,
     flexDirection: "row",
@@ -133,6 +138,33 @@ const styles = StyleSheet.create({
     marginHorizontal: screenWidth / 22,
     marginVertical: 5,
     borderRadius: 8,
+  },
+  button_dzikir: {
+    height: screenHeight / 3,
+    width: screenWidth / 1.35,
+    borderRadius: screenHeight / 3,
+    backgroundColor: primary,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  dzikir_setting: {
+    display: "flex",
+    flexDirection: "row",
+    marginTop: 100,
+    marginHorizontal: 12,
+  },
+  dzikir_setting_button: {
+    flex: 1,
+    marginHorizontal: 8,
+    backgroundColor: primary,
+    padding: 18,
+    borderRadius: 8,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  count: {
+    color: basic,
+    fontSize: 70,
   },
   title: {
     marginHorizontal: 14,
