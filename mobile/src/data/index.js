@@ -1,3 +1,4 @@
+export { default as dataDzikir } from "./dataDzikir";
 export { default as dataHadist } from "./dataHadist";
 export { default as dataMathuratKubroPagi } from "./dataMathuratKubroPagi";
 export { default as dataMathuratKubroSore } from "./dataMathuratKubroSore";

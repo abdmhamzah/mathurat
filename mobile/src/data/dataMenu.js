@@ -11,12 +11,13 @@ export const dataMenu = [
     logo: require("../assets/rub-el-hizb.png"),
   },
   { id: "4", name: `Dzikir Counter`, logo: require("../assets/Beads.png") },
+  { id: "5", name: `Doa-doa Sholat`, logo: require("../assets/isha.png") },
+
+  { id: "6", name: `Asmaul Husna`, logo: require("../assets/Allah.png") },
   {
-    id: "5",
+    id: "7",
     name: `Doa-doa Haji & Umroh`,
     logo: require("../assets/Mecca.png"),
   },
-  { id: "6", name: `Asmaul Husna`, logo: require("../assets/Allah.png") },
-  { id: "7", name: `Doa-doa Sholat`, logo: require("../assets/isha.png") },
   { id: "8", name: `Doa-doa Pilihan`, logo: require("../assets/window.png") },
 ];

@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Text, View, TouchableOpacity, Vibration, Alert } from "react-native";
+import {
+  Text,
+  View,
+  TouchableOpacity,
+  Vibration,
+  Alert,
+  FlatList,
+} from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { dataDzikir } from "../data/dataDzikir";
+import { DzikirCard } from "../components";
 import { styles } from "../styles";
 
 export default function DzikirCounterScreen() {
@@ -9,6 +18,7 @@ export default function DzikirCounterScreen() {
 
   function addCounter() {
     setCounter(counter + 1);
+    Vibration.vibrate(1000);
   }
 
   function resetCounter() {
@@ -73,9 +83,28 @@ export default function DzikirCounterScreen() {
 
   return (
     <View style={styles.scroll_screen}>
-      <TouchableOpacity onPress={addCounter} style={styles.button_dzikir}>
-        <Text style={styles.count}>{counter}</Text>
-      </TouchableOpacity>
+      <View style={styles.slider_container}>
+        <FlatList
+          data={dataDzikir}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <DzikirCard arab={item.arab} terjemah={item.terjemah} />
+          )}
+          pagingEnabled
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentInsetAdjustmentBehavior="never"
+          snapToAlignment="center"
+          decelerationRate="fast"
+          automaticallyAdjustContentInsets={false}
+          scrollEventThrottle={1}
+        />
+      </View>
+      <View style={styles.dzikir_container}>
+        <TouchableOpacity onPress={addCounter} style={styles.button_dzikir}>
+          <Text style={styles.count}>{counter}</Text>
+        </TouchableOpacity>
+      </View>
       <View style={styles.dzikir_setting}>
         <TouchableOpacity
           onPress={resetCounter}

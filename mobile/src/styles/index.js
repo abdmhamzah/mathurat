@@ -7,7 +7,7 @@ const primary = "#312c51";
 const secondary = "#48426d";
 const warning = "#f0c38e";
 const danger = "#f1aa9b";
-const basic = "#fff";
+const basic = "#dddddd";
 
 const styles = StyleSheet.create({
   header_bar: {
@@ -120,6 +120,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: screenWidth,
   },
+  slider_container: {
+    flex: 1.2,
+    marginVertical: screenHeight / 30,
+  },
   button: {
     flex: 1,
     alignItems: "center",
@@ -140,22 +144,26 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   button_dzikir: {
-    height: screenHeight / 3,
-    width: screenWidth / 1.35,
+    height: screenHeight / 2.4,
+    width: screenWidth / 1.1,
     borderRadius: screenHeight / 3,
     backgroundColor: primary,
     alignItems: "center",
     justifyContent: "center",
   },
   dzikir_setting: {
+    flex: 1,
     display: "flex",
     flexDirection: "row",
-    marginTop: 100,
-    marginHorizontal: 12,
+    flexWrap: "wrap",
+    marginBottom: 20,
+    marginTop: 20,
+    width: screenWidth - 34,
   },
   dzikir_setting_button: {
     flex: 1,
-    marginHorizontal: 8,
+    marginHorizontal: 6,
+    marginVertical: 18,
     backgroundColor: primary,
     padding: 18,
     borderRadius: 8,
@@ -163,8 +171,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   count: {
-    color: basic,
-    fontSize: 70,
+    color: warning,
+    fontSize: 170,
   },
   title: {
     marginHorizontal: 14,
@@ -181,10 +189,21 @@ const styles = StyleSheet.create({
   },
   card_dua: {
     flex: 1,
-    alignItems: "center",
     backgroundColor: primary,
     borderRadius: 8,
     marginVertical: 12,
+    width: screenWidth - 40,
+  },
+  carousel_dzikir: {
+    alignItems: "center",
+    backgroundColor: secondary,
+    width: screenWidth,
+  },
+  card_dzikir: {
+    alignItems: "center",
+    backgroundColor: primary,
+    borderRadius: 8,
+    paddingVertical: 12,
     width: screenWidth - 40,
   },
   title_detail: {
@@ -227,10 +246,11 @@ const styles = StyleSheet.create({
   header: {
     display: "flex",
     flexDirection: "row",
-    width: screenWidth - 70,
+    alignItems: "center",
+    width: screenWidth - 40,
     marginTop: 10,
     paddingVertical: 10,
-    paddingHorizontal: 10,
+    paddingHorizontal: 25,
   },
   judul: {
     flex: 2,
@@ -262,8 +282,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 25,
     textAlign: "center",
   },
+  dzikir: {
+    fontFamily: "lateef",
+    fontSize: 40,
+    color: danger,
+    marginTop: 10,
+    textAlign: "center",
+  },
   info: {
-    width: screenWidth - 85,
+    width: screenWidth - 40,
+    paddingHorizontal: 25,
     color: danger,
     fontSize: 14,
     textAlign: "left",
