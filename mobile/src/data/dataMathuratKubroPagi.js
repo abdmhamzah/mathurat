@@ -140,7 +140,7 @@ export const dataMathuratKubroPagi = [
     arab:
       "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ \n إِذَا زُلۡزِلَتِ ٱلۡأَرۡضُ زِلۡزَالَهَا ۞ وَأَخۡرَجَتِ ٱلۡأَرۡضُ أَثۡقَالَهَا ۞ وَقَالَ ٱلۡإِنسَٰنُ مَا لَهَا ۞ يَوۡمَئِذٖ تُحَدِّثُ أَخۡبَارَهَا ۞ بِأَنَّ رَبَّكَ أَوۡحَىٰ لَهَا ۞ يَوۡمَئِذٖ يَصۡدُرُ ٱلنَّاسُ أَشۡتَاتٗا لِّيُرَوۡاْ أَعۡمَٰلَهُمۡ ۞ فَمَن يَعۡمَلۡ مِثۡقَالَ ذَرَّةٍ خَيۡرٗا يَرَهُۥ ۞ وَمَن يَعۡمَلۡ مِثۡقَالَ ذَرَّةٖ شَرّٗا يَرَهُۥ",
     terjemah:
-      "Apabila bumi digoncangkan dengan goncangan (yang dahsyat). Dan bumi telah mengeluarkan beban-beban berat (yang dikandung)nya. Dan manusia bertanya: 'Mengapa bumi (menjadi begini)?'. Pada hari itu bumi menceritakan beritanya. Karena sesungguhnya Tuhanmu telah memerintahkan (yang sedemikian itu) kepadanya. Pada hari itu manusia ke luar dari kuburnya dalam keadaan bermacam-macam, supaya diperlihatkan kepada mereka (balasan) pekerjaan mereka. Barangsiapa yang mengerjakan kebaikan seberat dzarrahpun, niscaya dia akan melihat (balasan)nya. Dan barangsiapa yang mengerjakan kejahatan sebesar dzarrahpun, niscaya dia akan melihat (balasan)nya pula.",
+      "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang. Apabila bumi digoncangkan dengan goncangan (yang dahsyat). Dan bumi telah mengeluarkan beban-beban berat (yang dikandung)nya. Dan manusia bertanya: 'Mengapa bumi (menjadi begini)?'. Pada hari itu bumi menceritakan beritanya. Karena sesungguhnya Tuhanmu telah memerintahkan (yang sedemikian itu) kepadanya. Pada hari itu manusia ke luar dari kuburnya dalam keadaan bermacam-macam, supaya diperlihatkan kepada mereka (balasan) pekerjaan mereka. Barangsiapa yang mengerjakan kebaikan seberat dzarrahpun, niscaya dia akan melihat (balasan)nya. Dan barangsiapa yang mengerjakan kejahatan sebesar dzarrahpun, niscaya dia akan melihat (balasan)nya pula.",
     pengulangan: 1,
   },
   {
@@ -149,7 +149,7 @@ export const dataMathuratKubroPagi = [
     arab:
       "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ \n قُلۡ يَٰٓأَيُّهَا ٱلۡكَٰفِرُونَ ۞ لَآ أَعۡبُدُ مَا تَعۡبُدُونَ ۞ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ ۞ وَلَآ أَنَا۠ عَابِدٞ مَّا عَبَدتُّمۡ ۞ وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ ۞ لَكُمۡ دِينُكُمۡ وَلِيَ دِينِ",
     terjemah:
-      "Katakanlah: 'Hai orang-orang kafir. Aku tidak akan menyembah apa yang kamu sembah. Dan kamu bukan penyembah Tuhan yang aku sembah. Dan aku tidak pernah menjadi penyembah apa yang kamu sembah. Dan kamu tidak pernah (pula) menjadi penyembah Tuhan yang aku sembah. Untukmu agamamu, dan untukkulah, agamaku'.",
+      "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang. Katakanlah: 'Hai orang-orang kafir. Aku tidak akan menyembah apa yang kamu sembah. Dan kamu bukan penyembah Tuhan yang aku sembah. Dan aku tidak pernah menjadi penyembah apa yang kamu sembah. Dan kamu tidak pernah (pula) menjadi penyembah Tuhan yang aku sembah. Untukmu agamamu, dan untukkulah, agamaku'.",
     pengulangan: 1,
   },
   {
@@ -158,7 +158,7 @@ export const dataMathuratKubroPagi = [
     arab:
       "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ \n إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ ۞ وَرَأَيۡتَ ٱلنَّاسَ يَدۡخُلُونَ فِي دِينِ ٱللَّهِ أَفۡوَاجٗا ۞ فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥكَانَ تَوَّابَۢا",
     terjemah:
-      "Apabila telah datang pertolongan Allah dan kemenangan. Dan kamu lihat manusia masuk agama Allah dengan berbondong-bondong. Maka bertasbihlah dengan memuji Tuhanmu dan mohonlah ampun kepada-Nya. Sesungguhnya Dia adalah Maha Penerima taubat",
+      "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang. Apabila telah datang pertolongan Allah dan kemenangan. Dan kamu lihat manusia masuk agama Allah dengan berbondong-bondong. Maka bertasbihlah dengan memuji Tuhanmu dan mohonlah ampun kepada-Nya. Sesungguhnya Dia adalah Maha Penerima taubat",
     pengulangan: 1,
   },
   {

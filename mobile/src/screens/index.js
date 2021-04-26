@@ -1,4 +1,5 @@
 export { default as AsmaulHusnaScreen } from "./AsmaulHusnaScreen";
+export { default as DetailDoaScreen } from "./DetailDoaScreen";
 export { default as DetailHadistScreen } from "./DetailHadistScreen";
 export { default as DoaPilihanScreen } from "./DoaPilihanScreen";
 export { default as DoaHajiScreen } from "./DoaHajiScreen";
