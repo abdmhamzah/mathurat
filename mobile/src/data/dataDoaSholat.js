@@ -308,4 +308,98 @@ export const dataDoaSholat = [
       },
     ],
   },
+  {
+    id: "9",
+    title: "Dzikir Setelah Sholat",
+    data: [
+      {
+        judul: "Pertama (Dibaca 3 kali)",
+        arab: "أَسْتَغْفِرُ اللهَ",
+        terjemah: "Aku minta ampun kepada Allah.",
+      },
+      {
+        judul: "Kedua",
+        arab:
+          "اَللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَاْلإِكْرَامِ",
+        terjemah:
+          "Ya Allah, Engkau pemberi keselamatan, dan dariMu keselamatan, Maha Suci Engkau, wahai Tuhan Yang Pemilik Keagungan dan Kemuliaan.",
+      },
+      {
+        judul: "Ketiga",
+        arab:
+          "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ",
+        terjemah:
+          "Tiada Rabb yang berhak disembah selain Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Bagi-Nya puji dan bagi-Nya kerajaan. Dia Maha Kuasa atas segala sesuatu.",
+      },
+      {
+        judul: "Keempat",
+        arab:
+          "اَللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+        terjemah:
+          "Ya Allah, tidak ada yang mencegah apa yang Engkau berikan dan tidak ada yang memberi apa yang Engkau cegah. Tidak berguna kekayaan dan kemuliaan itu bagi pemiliknya (selain iman dan amal shalihnya yang menyelamatkan dari siksaan). Hanya dari-Mu kekayaan dan kemuliaan.",
+      },
+      {
+        judul: "Kelima",
+        arab:
+          "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللهِ، لاَ إِلَـهَ إِلاَّ اللهُ، وَلاَ نَعْبُدُ إِلاَّ إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لاَ إِلَـهَ إِلاَّ اللهُ مُخْلِصِيْنَ لَهُ الدِّيْنَ وَلَوْ كَرِهَ الْكَافِرُوْنَ",
+        terjemah:
+          "Tiada Rabb (yang berhak disembah) kecuali Allah, Yang Maha Esa, tidak ada sekutu bagi-Nya. Bagi-Nya kerajaan dan pujaan. Dia Mahakuasa atas segala sesuatu. Tidak ada daya dan kekuatan kecuali (dengan pertolongan) Allah. Tiada Rabb (yang hak disembah) kecuali Allah. Kami tidak menyembah kecuali kepada-Nya. Bagi-Nya nikmat, anugerah dan pujaan yang baik. Tiada Rabb (yang hak disembah) kecuali Allah, dengan memurnikan ibadah kepadaNya, sekalipun orang-orang kafir sama benci.",
+      },
+      {
+        judul: "Keenam (Dibaca 33 kali)",
+        arab: "سُبْحَانَ اللهِ",
+        terjemah: "Maha Suci Allah.",
+      },
+      {
+        judul: "Ketujuh (Dibaca 33 kali)",
+        arab: "اَلْحَمْدُ لِلَّهِ",
+        terjemah: "Segala Puji Bagi Allah.",
+      },
+      {
+        judul: "Kedelapan (Dibaca 33 kali)",
+        arab: "اَللهُ أَكْبَرُ",
+        terjemah: "Allah Maha Besar.",
+      },
+      {
+        judul: "Kesembilan",
+        arab:
+          "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ",
+        terjemah:
+          "Tidak ada Rabb (yang berhak disembah) kecuali Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Bagi-Nya kerajaan. Bagi-Nya pujaan. Dia-lah Yang Mahakuasa atas segala sesuatu.",
+      },
+    ],
+  },
+  {
+    id: "10",
+    title: "Doa Qiyamullail",
+    data: [
+      {
+        judul: "Doa memulai sholat Qiyamullail",
+        arab:
+          "اللَّهُمَّ رَبَّ جِبْرِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ فَاطِرَ السَّمَوَاتِ وَالْأَرْضِ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ إِنَّكَ أَنْتَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ",
+        terjemah:
+          "Ya Allah, Tuhannya Jibril, mikail, dan israfil. Pencipta langit dan bumi. Yang mengetahui yang gaib dan yang nampak. Engkau yang memutuskan diantara hamba-Mu terhadap apa yang mereka perselisihkan. Berilah petunjuk kepadaku untuk menggapai kebenaran yang diperselisihan dengan izin-Mu. Sesungguhnya Engkau memberi petunjuk kepada siapa saja yang Engkau kehendaki menuju jalan yang lurus. \n \n Hadist Riwayat Muslim 770, Abu daud 767, Turmudzi 3420 dan yang lainnya.",
+      },
+      {
+        judul: "Doa setelah sholat Qiyamullail",
+        arab:
+          "اَللّهُمَّ لَكَ الْحَمْدُ أَنْتَ نُوْرُ السَّمَاوَاتِ وَاْلأَرْضِ وَمَنْ فِيْهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمَاوَاتِ وَاْلأَرْضِ وَمَنْ فِيْهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ رَبُّ السَّمَاوَاتِ وَاْلأَرْضِ وَمَنْ فِيْهِنَّ، أَنْتَ الْحَقُّ، وَوَعْدُكَ الْحَقُّ، وَقَوْلُكَ الْحَقُّ، وَلِقَاؤُكَ الْحَقُّ، وَالْجَنَّةُ حَقٌّ، وَالنَّارُ حَقٌّ، وَالسَّاعَةُ حَقٌّ، \n \n اَللّهُمَّ لَكَ أَسْلَمْتُ، وَبِكَ آمَنْتُ، وَعَلَيْكَ تَوَكَّلْتُ، وَإِلَيْكَ أَنَبْتُ، وَبِكَ خَاصَمْتُ، وَإِلَيْكَ حَاكَمْتُ. فَاغْفِرْ لِيْ مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، أَنْتَ إِلٰهِيْ لاَ إِلٰهَ إِلاَّ أَنْتَ",
+        terjemah:
+          "Ya Allah, hanya milik-Mu segala puji, Engkau cahaya langit dan bumi serta siapa saja yang ada di sana. Hanya milikMu segala puji, Engkau yang mengatur langit dan bumi serta siapa saja yang ada di sana. Hanya milikMu segala puji, Engkau pencipta langit dan bumi serta siapa saja yang ada di sana. Engkau Maha benar, janji-Mu benar, firman-Mu benar, pertemuan dengan-Mu benar. Surga itu benar, neraka itu benar, dan kiamat itu benar. \n \n Ya Allah, hanya kepada-Mu aku pasrah diri, hanya kepada-Mu aku beriman, hanya kepada-Mu aku bertawakkal, hanya kepada-Mu aku bertaubat, hanya dengan petunjuk-Mu aku berdebat, hanya kepada-Mu aku memohon keputusan, karena itu, ampunilah aku atas dosaku yang telah lewat dan yang akan datang, yang kulakukan sembunyi-sembunyi maupun yang kulakukan terang-terangan. Engkau yang paling awal dan yang paling akhir. Engkau Tuhanku. Tiada tuhan yang berhak disembah kecuali Engkau. \n \n Hadist Riwayat Ahmad 2710, Muslim 769, Ibn Majah 1355.",
+      },
+    ],
+  },
+  {
+    id: "11",
+    title: "Doa Ketika Dhuha",
+    data: [
+      {
+        judul: "Doa Setelah Sholat Dhuha (Dibaca 100 kali)",
+        arab:
+          "اللَّهُمَّ اغْفِرْ لِي، وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيْمِ",
+        terjemah:
+          "Ya Allah, ampunilah aku dan terimalah taubatku, sesungguhnya Engkau Maha Penerima Taubat lagi Maha Penyayang. \n \n Hadist Riwayat Bukhari dalam Al-Adab Al-Mufrad, no. 619. Syaikh Al-Albani mengatakan bahwa hadits ini sanadnya shahih.",
+      },
+    ],
+  },
 ];
