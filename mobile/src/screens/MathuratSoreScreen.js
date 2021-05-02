@@ -1,19 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { View, FlatList } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { dataMathuratSughraSore } from "../data/dataMathuratSughraSore";
+import { dataMathuratKubroSore } from "../data/dataMathuratKubroSore";
 import { CardDua } from "../components";
 import { styles } from "../styles";
 
 export default function MathuratSore() {
-  const [mathuratSore, setMathuratSore] = useState(dataMathuratSughraSore);
+  const [isKubro, setIsKubro] = useState(false);
+  const [mathuratSughra, setMathuratSughra] = useState(dataMathuratSughraSore);
+  const [mathuratKubro, setMathuratKubro] = useState(dataMathuratKubroSore);
+
+  async function getKubro() {
+    const jsonValue = await AsyncStorage.getItem("kubro");
+    const { value } = JSON.parse(jsonValue);
+    setIsKubro(value);
+  }
+
+  useEffect(() => {
+    getKubro();
+  }, [isKubro]);
 
   return (
     <View style={styles.scroll_screen}>
       <FlatList
         keyExtractor={(item) => item.id}
-        data={mathuratSore}
-        contentContainerStyle={{ paddingVertical: 16 }}
+        data={isKubro ? mathuratKubro : mathuratSughra}
         showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingVertical: 16 }}
         renderItem={({ item }) => (
           <CardDua
             judul={item.judul}
