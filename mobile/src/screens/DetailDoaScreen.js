@@ -1,19 +1,9 @@
 import React from "react";
-import { useFonts } from "expo-font";
-import { AppLoading } from "expo";
 import { View, Text, FlatList } from "react-native";
 import { styles } from "../styles";
 
 export default function DetailDoaScreen({ route }) {
   const { data } = route.params;
-  let [fontsLoaded] = useFonts({
-    lateef: require("../fonts/Lateef-Regular.ttf"),
-    circular: require("../fonts/lineto-circular-book.ttf"),
-  });
-
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
 
   return (
     <View style={styles.scroll_screen}>

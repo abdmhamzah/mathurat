@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useFonts } from "expo-font";
-import { AppLoading } from "expo";
 import { Text, View, ScrollView, Switch } from "react-native";
 import { styles, danger } from "../styles";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function Setting() {
-  let [fontsLoaded] = useFonts({
-    circular: require("../fonts/lineto-circular-book.ttf"),
-  });
-
   const [isKubro, setIsKubro] = useState(false);
   const [isCc, setIsCc] = useState(false);
   const [isTranslate, setIsTranslate] = useState(false);
@@ -80,9 +74,6 @@ export default function Setting() {
     getCc();
   }, [isTranslate, isKubro, isCc]);
 
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.setting_section}>AL MA'TSURAT</Text>

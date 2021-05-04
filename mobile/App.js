@@ -1,6 +1,7 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { useFonts } from "expo-font";
 import {
   AsmaulHusnaStack,
   DoaHajiStack,
@@ -17,8 +18,18 @@ import {
 const Stack = createStackNavigator();
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    circularBold: require("./src/fonts/lineto-circular-black.ttf"),
+    circular: require("./src/fonts/lineto-circular-book.ttf"),
+    lateef: require("./src/fonts/Lateef-Regular.ttf"),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={{ colors: { background: "#48426d" } }}>
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{

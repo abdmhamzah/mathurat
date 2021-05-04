@@ -1,12 +1,9 @@
 import React from "react";
 import { Text, View, FlatList, TouchableOpacity } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 import { dataDoaSholat } from "../data/dataDoaSholat";
 import { styles } from "../styles";
 
-export default function DoaSholatScreen(props) {
-  const navigation = useNavigation();
-
+export default function DoaSholatScreen({ navigation }) {
   return (
     <View style={styles.scroll_screen}>
       <FlatList

@@ -1,22 +1,9 @@
 import React from "react";
 import { Text, View, FlatList, TouchableOpacity } from "react-native";
-import { useFonts } from "expo-font";
-import { AppLoading } from "expo";
-import { useNavigation } from "@react-navigation/native";
 import { styles } from "../styles";
 import { dataHadist } from "../data/dataHadist";
 
-export default function HadistScreen() {
-  const navigation = useNavigation();
-  let [fontsLoaded] = useFonts({
-    lateef: require("../fonts/Lateef-Regular.ttf"),
-    circular: require("../fonts/lineto-circular-book.ttf"),
-  });
-
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
-
+export default function HadistScreen({ navigation }) {
   return (
     <View style={styles.scroll_screen}>
       <FlatList

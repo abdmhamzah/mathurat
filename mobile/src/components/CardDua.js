@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Text, View } from "react-native";
-import { useFonts } from "expo-font";
-import { AppLoading } from "expo";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { styles } from "../styles";
 
 export default function Card(props) {
-  let [fontsLoaded] = useFonts({
-    lateef: require("../fonts/Lateef-Regular.ttf"),
-    circular: require("../fonts/lineto-circular-book.ttf"),
-  });
-
   const [isTranslate, setIsTranslate] = useState(false);
 
   async function getTranslate() {
@@ -26,10 +19,6 @@ export default function Card(props) {
   useEffect(() => {
     getTranslate();
   }, [isTranslate]);
-
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
 
   return (
     <View style={styles.card_dua}>
