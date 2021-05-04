@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {
-  Text,
-  View,
-  TouchableOpacity,
-  Vibration,
-  Alert,
-  FlatList,
-} from "react-native";
+import { Text, View, TouchableOpacity, Alert, FlatList } from "react-native";
+import * as Haptics from "expo-haptics";
 import { FontAwesome } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { dataDzikir } from "../data/dataDzikir";
@@ -18,7 +12,7 @@ export default function DzikirCounterScreen() {
 
   function addCounter() {
     setCounter(counter + 1);
-    Vibration.vibrate(1000);
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
   }
 
   function resetCounter() {
