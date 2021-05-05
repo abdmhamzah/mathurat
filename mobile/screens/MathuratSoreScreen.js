@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { View, FlatList } from "react-native";
+import { FlatList } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { dataMathuratSughraSore } from "../data/dataMathuratSughraSore";
 import { dataMathuratKubroSore } from "../data/dataMathuratKubroSore";
 import { CardDua } from "../components";
-import { styles } from "../styles";
+import { SIZES } from "../styles";
 
 export default function MathuratSore() {
   const [isKubro, setIsKubro] = useState(false);
@@ -22,21 +22,19 @@ export default function MathuratSore() {
   }, [isKubro]);
 
   return (
-    <View style={styles.scroll_screen}>
-      <FlatList
-        keyExtractor={(item) => item.id}
-        data={isKubro ? mathuratKubro : mathuratSughra}
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingVertical: 16 }}
-        renderItem={({ item }) => (
-          <CardDua
-            judul={item.judul}
-            arab={item.arab}
-            terjemah={item.terjemah}
-            pengulangan={item.pengulangan}
-          />
-        )}
-      />
-    </View>
+    <FlatList
+      keyExtractor={(item) => item.id}
+      data={isKubro ? mathuratKubro : mathuratSughra}
+      showsVerticalScrollIndicator={false}
+      contentContainerStyle={{ paddingVertical: SIZES.padding * 3 }}
+      renderItem={({ item }) => (
+        <CardDua
+          judul={item.judul}
+          arab={item.arab}
+          terjemah={item.terjemah}
+          pengulangan={item.pengulangan}
+        />
+      )}
+    />
   );
 }

@@ -13,15 +13,15 @@ import {
   MathuratPagiStack,
   MathuratSoreStack,
   SettingStack,
-} from "./src/stacks";
+} from "./stacks";
 
 const Stack = createStackNavigator();
 
 export default function App() {
   let [fontsLoaded] = useFonts({
-    circularBold: require("./src/fonts/lineto-circular-black.ttf"),
-    circular: require("./src/fonts/lineto-circular-book.ttf"),
-    lateef: require("./src/fonts/Lateef-Regular.ttf"),
+    circularBold: require("./assets/fonts/lineto-circular-black.ttf"),
+    circular: require("./assets/fonts/lineto-circular-book.ttf"),
+    lateef: require("./assets/fonts/Lateef-Regular.ttf"),
   });
 
   if (!fontsLoaded) {

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { MathuratPagiScreen } from "../screens";
-import { styles, basic } from "../styles";
+import { MathuratSoreScreen } from "../screens";
+import { COLOR, FONTS } from "../styles";
 
 const Stack = createStackNavigator();
 
-export default function MathuratPagiStack() {
+export default function MathuratSoreStack() {
   const [isKubro, setIsKubro] = useState(false);
 
   async function getKubro() {
@@ -26,13 +26,20 @@ export default function MathuratPagiStack() {
       }}
     >
       <Stack.Screen
-        name="Al Ma'tsurat Pagi"
-        component={MathuratPagiScreen}
+        name="Al Ma'tsurat Sore"
+        component={MathuratSoreScreen}
         options={{
-          title: `Ma'tsurat Pagi ${isKubro ? "Kubro" : "Sughra"}`,
-          headerStyle: styles.header_bar,
-          headerTintColor: basic,
-          headerTitleStyle: styles.header_title,
+          title: `Ma'tsurat Sore ${isKubro ? "Kubro" : "Sughra"}`,
+          headerStyle: {
+            backgroundColor: COLOR.primary,
+            shadowColor: COLOR.black,
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
+            elevation: 5,
+          },
+          headerTintColor: COLOR.gray,
+          headerTitleStyle: { ...FONTS.h2 },
         }}
       />
     </Stack.Navigator>

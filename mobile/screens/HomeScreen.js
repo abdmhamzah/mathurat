@@ -3,7 +3,7 @@ import { FlatList, Text, View, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import { dataMenu } from "../data/dataMenu";
 import { ButtonMenu } from "../components";
-import { styles } from "../styles";
+import { FONTS, COLOR, SIZES } from "../styles";
 
 export default function HomeScreen({ navigation }) {
   const [title, setTitle] = useState(dataMenu);
@@ -25,9 +25,20 @@ export default function HomeScreen({ navigation }) {
   }
 
   return (
-    <View style={styles.container}>
-      <View style={styles.home_headbar}>
-        <Text style={styles.home_title}>
+    <View style={{ flex: 1, backgroundColor: COLOR.secondary }}>
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          flexDirection: "row",
+          backgroundColor: COLOR.primary,
+          paddingTop: SIZES.padding * 3,
+          paddingHorizontal: SIZES.padding * 2,
+          shadowOffset: { width: 0, height: 2 },
+          shadowColor: COLOR.black,
+        }}
+      >
+        <Text style={{ flex: 1, color: COLOR.danger, ...FONTS.h1 }}>
           {parseInt(currentTime) < 11
             ? "Selamat Pagi 🌅"
             : "" || (11 <= parseInt(currentTime) && parseInt(currentTime) < 15)
@@ -39,15 +50,19 @@ export default function HomeScreen({ navigation }) {
             : ""}{" "}
         </Text>
         <TouchableOpacity onPress={goToSetting}>
-          <FontAwesome name="cog" size={30} style={styles.home_setting} />
+          <FontAwesome
+            name="cog"
+            size={30}
+            style={{ color: COLOR.danger, textAlign: "right", marginRight: 5 }}
+          />
         </TouchableOpacity>
       </View>
-      <View style={styles.home_menu}>
+      <View style={{ flex: 9 }}>
         <FlatList
           numColumns={2}
           data={title}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ paddingVertical: 10 }}
+          contentContainerStyle={{ paddingVertical: SIZES.padding }}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
             <ButtonMenu title={item.name} logo={item.logo} />
