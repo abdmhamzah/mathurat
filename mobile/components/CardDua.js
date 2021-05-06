@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLOR, SIZES, FONTS } from "../styles";
 
-export default function Card(props) {
+export default function CardDua(props) {
   const [isTranslate, setIsTranslate] = useState(false);
 
   async function getTranslate() {
@@ -59,7 +59,7 @@ export default function Card(props) {
             style={{
               textAlign: "center",
               color: COLOR.gray,
-              ...FONTS.arab1,
+              ...FONTS.arab2,
             }}
           >
             {props.arab}

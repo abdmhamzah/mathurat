@@ -37,10 +37,11 @@ export const SIZES = {
   body3: 16,
   body4: 14,
   body5: 12,
-  arab1: 44,
-  arab2: 38,
-  arab3: 32,
-  arab4: 30,
+  arab1: 50,
+  arab2: 44,
+  arab3: 38,
+  arab4: 32,
+  arab5: 30,
 
   // app dimensions
   width,
@@ -60,9 +61,9 @@ export const FONTS = {
   body5: { fontFamily: "circular", fontSize: SIZES.body5, lineHeight: 22 },
   arab1: { fontFamily: "lateef", fontSize: SIZES.arab1, lineHeight: 55 },
   arab2: { fontFamily: "lateef", fontSize: SIZES.arab2, lineHeight: 50 },
-  arab3: { fontFamily: "lateef", fontSize: SIZES.arab3, lineHeight: 22 },
-  arab4: { fontFamily: "lateef", fontSize: SIZES.arab4, lineHeight: 22 },
-  arab5: { fontFamily: "lateef", fontSize: SIZES.arab5, lineHeight: 22 },
+  arab3: { fontFamily: "lateef", fontSize: SIZES.arab3, lineHeight: 45 },
+  arab4: { fontFamily: "lateef", fontSize: SIZES.arab4, lineHeight: 40 },
+  arab5: { fontFamily: "lateef", fontSize: SIZES.arab5, lineHeight: 35 },
 };
 
 export default { COLOR, SIZES, FONTS };
