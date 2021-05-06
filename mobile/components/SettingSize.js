@@ -5,8 +5,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLOR, FONTS, SIZES } from "../styles";
 
 export default function SettingSize() {
-  const [sizeArab, setSizeArab] = useState(38);
-  const [sizeTerjemah, setSizeTerjemah] = useState(20);
+  const [sizeArab, setSizeArab] = useState(35);
+  const [sizeTerjemah, setSizeTerjemah] = useState(18);
   const [toggleSizeArab, setToggleSizeArab] = useState(false);
   const [toggleSizeTerjemah, setToggleSizeTerjemah] = useState(false);
 
@@ -187,7 +187,7 @@ export default function SettingSize() {
               <Picker.Item label="14" value="14" />
               <Picker.Item label="16" value="16" />
               <Picker.Item label="18" value="18" />
-              <Picker.Item label="20" value="45" />
+              <Picker.Item label="20" value="20" />
             </Picker>
           </View>
         )}

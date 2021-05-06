@@ -5,20 +5,75 @@ import { COLOR, SIZES, FONTS } from "../styles";
 
 export default function CardDua(props) {
   const [isTranslate, setIsTranslate] = useState(false);
+  const [sizeArab, setSizeArab] = useState(30);
+  const [sizeTerjemah, setSizeTerjemah] = useState(14);
 
   async function getTranslate() {
     try {
       const jsonValue = await AsyncStorage.getItem("translate");
       const { value } = JSON.parse(jsonValue);
       return jsonValue != null ? setIsTranslate(value) : null;
-    } catch (e) {
-      // error reading value
+    } catch (e) {}
+  }
+
+  async function getArabSize() {
+    try {
+      const jsonValue = await AsyncStorage.getItem("sizeArab");
+      const { value } = JSON.parse(jsonValue);
+      return jsonValue != null ? setSizeArab(value) : null;
+    } catch (e) {}
+  }
+
+  async function getTranslateSize() {
+    try {
+      const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
+      const { value } = JSON.parse(jsonValue);
+      console.log(jsonValue);
+      return jsonValue != null ? setSizeTerjemah(value) : null;
+    } catch (e) {}
+  }
+
+  function fontSizeArab() {
+    if (sizeArab == 30) {
+      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab5 };
+    }
+    if (sizeArab == 35) {
+      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab4 };
+    }
+    if (sizeArab == 40) {
+      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab3 };
+    }
+    if (sizeArab == 45) {
+      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab2 };
+    }
+    if (sizeArab == 50) {
+      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab1 };
+    }
+  }
+
+  function fontSizeTerjemah() {
+    if (sizeTerjemah == 12) {
+      return { textAlign: "left", color: COLOR.gray, ...FONTS.body5 };
+    }
+    if (sizeTerjemah == 14) {
+      return { textAlign: "left", color: COLOR.gray, ...FONTS.body4 };
+    }
+    if (sizeTerjemah == 16) {
+      return { textAlign: "left", color: COLOR.gray, ...FONTS.body3 };
+    }
+    if (sizeTerjemah == 18) {
+      return { textAlign: "left", color: COLOR.gray, ...FONTS.body2 };
+    }
+    if (sizeTerjemah == 20) {
+      return { textAlign: "left", color: COLOR.gray, ...FONTS.body1 };
     }
   }
 
   useEffect(() => {
     getTranslate();
-  }, [isTranslate]);
+    getArabSize();
+    getTranslateSize();
+  }, [isTranslate, sizeArab, sizeTerjemah]);
 
   return (
     <View style={{ alignItems: "center" }}>
@@ -55,15 +110,7 @@ export default function CardDua(props) {
           </Text>
         </View>
         <View style={{ marginTop: SIZES.padding }}>
-          <Text
-            style={{
-              textAlign: "center",
-              color: COLOR.gray,
-              ...FONTS.arab2,
-            }}
-          >
-            {props.arab}
-          </Text>
+          <Text style={fontSizeArab()}>{props.arab}</Text>
         </View>
         {isTranslate ? (
           <>
@@ -76,19 +123,9 @@ export default function CardDua(props) {
             >
               Terjemah
             </Text>
-            <Text
-              style={{
-                color: COLOR.gray,
-                marginTop: SIZES.padding,
-                ...FONTS.body2,
-              }}
-            >
-              {props.terjemah}
-            </Text>
+            <Text style={fontSizeTerjemah()}>{props.terjemah}</Text>
           </>
         ) : null}
-        {/* <Text style={styles.info}>Fadhillah</Text>
-      <Text style={styles.fadilah}>Isi Fadhilah</Text> */}
       </View>
     </View>
   );
