@@ -2,11 +2,19 @@ import React, { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { View, Text, FlatList } from "react-native";
 import { FONTS, SIZES, COLOR } from "../styles";
+import { fontLatinChecker, fontArabChecker } from "../helpers";
 
 export default function DetailDoaScreen({ route }) {
   const { data } = route.params;
   const [sizeArab, setSizeArab] = useState(30);
   const [sizeTerjemah, setSizeTerjemah] = useState(14);
+  const [fontArab, setFontArab] = useState("Uthmani");
+
+  async function getFontArab() {
+    const jsonValue = await AsyncStorage.getItem("fontArab");
+    const { value } = JSON.parse(jsonValue);
+    return jsonValue != null ? setFontArab(value) : null;
+  }
 
   async function getArabSize() {
     try {
@@ -24,43 +32,8 @@ export default function DetailDoaScreen({ route }) {
     } catch (e) {}
   }
 
-  function fontSizeArab() {
-    if (sizeArab == 30) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab5 };
-    }
-    if (sizeArab == 35) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab4 };
-    }
-    if (sizeArab == 40) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab3 };
-    }
-    if (sizeArab == 45) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab2 };
-    }
-    if (sizeArab == 50) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab1 };
-    }
-  }
-
-  function fontSizeTerjemah() {
-    if (sizeTerjemah == 12) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body5 };
-    }
-    if (sizeTerjemah == 14) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body4 };
-    }
-    if (sizeTerjemah == 16) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body3 };
-    }
-    if (sizeTerjemah == 18) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body2 };
-    }
-    if (sizeTerjemah == 20) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body1 };
-    }
-  }
-
   useEffect(() => {
+    getFontArab();
     getArabSize();
     getTranslateSize();
   }, [sizeArab, sizeTerjemah]);
@@ -93,7 +66,7 @@ export default function DetailDoaScreen({ route }) {
           >
             {item.judul}
           </Text>
-          <Text style={fontSizeArab()}>{item.arab}</Text>
+          <Text style={fontArabChecker(fontArab, sizeArab)}>{item.arab}</Text>
           <Text
             style={{
               color: COLOR.danger,
@@ -103,7 +76,7 @@ export default function DetailDoaScreen({ route }) {
           >
             Terjemah
           </Text>
-          <Text style={fontSizeTerjemah()}>{item.terjemah}</Text>
+          <Text style={fontLatinChecker(sizeTerjemah)}>{item.terjemah}</Text>
         </View>
       )}
     />

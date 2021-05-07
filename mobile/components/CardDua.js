@@ -2,11 +2,19 @@ import React, { useEffect, useState } from "react";
 import { Text, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLOR, SIZES, FONTS } from "../styles";
+import { fontArabChecker, fontLatinChecker } from "../helpers";
 
 export default function CardDua(props) {
   const [isTranslate, setIsTranslate] = useState(false);
   const [sizeArab, setSizeArab] = useState(30);
   const [sizeTerjemah, setSizeTerjemah] = useState(14);
+  const [fontArab, setFontArab] = useState("Uthmani");
+
+  async function getFontArab() {
+    const jsonValue = await AsyncStorage.getItem("fontArab");
+    const { value } = JSON.parse(jsonValue);
+    return jsonValue != null ? setFontArab(value) : null;
+  }
 
   async function getTranslate() {
     try {
@@ -32,43 +40,8 @@ export default function CardDua(props) {
     } catch (e) {}
   }
 
-  function fontSizeArab() {
-    if (sizeArab == 30) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab5 };
-    }
-    if (sizeArab == 35) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab4 };
-    }
-    if (sizeArab == 40) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab3 };
-    }
-    if (sizeArab == 45) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab2 };
-    }
-    if (sizeArab == 50) {
-      return { textAlign: "center", color: COLOR.gray, ...FONTS.arab1 };
-    }
-  }
-
-  function fontSizeTerjemah() {
-    if (sizeTerjemah == 12) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body5 };
-    }
-    if (sizeTerjemah == 14) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body4 };
-    }
-    if (sizeTerjemah == 16) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body3 };
-    }
-    if (sizeTerjemah == 18) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body2 };
-    }
-    if (sizeTerjemah == 20) {
-      return { textAlign: "left", color: COLOR.gray, ...FONTS.body1 };
-    }
-  }
-
   useEffect(() => {
+    getFontArab();
     getTranslate();
     getArabSize();
     getTranslateSize();
@@ -108,7 +81,7 @@ export default function CardDua(props) {
           </Text>
         </View>
         <View style={{ marginTop: SIZES.padding }}>
-          <Text style={fontSizeArab()}>{props.arab}</Text>
+          <Text style={fontArabChecker(fontArab, sizeArab)}>{props.arab}</Text>
         </View>
         {isTranslate ? (
           <>
@@ -121,7 +94,7 @@ export default function CardDua(props) {
             >
               Terjemah
             </Text>
-            <Text style={fontSizeTerjemah()}>{props.terjemah}</Text>
+            <Text style={fontLatinChecker(sizeTerjemah)}>{props.terjemah}</Text>
           </>
         ) : null}
       </View>

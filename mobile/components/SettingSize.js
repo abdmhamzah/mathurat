@@ -8,7 +8,7 @@ import { fontArabChecker, fontLatinChecker } from "../helpers";
 export default function SettingSize() {
   const [sizeArab, setSizeArab] = useState(35);
   const [sizeTerjemah, setSizeTerjemah] = useState(18);
-  const [fontArab, setFontArab] = useState("uthmani");
+  const [fontArab, setFontArab] = useState("Uthmani");
   const [toggleSizeArab, setToggleSizeArab] = useState(false);
   const [toggleSizeTerjemah, setToggleSizeTerjemah] = useState(false);
   const [toggleFontArab, setToggleFontArab] = useState(false);
@@ -70,6 +70,7 @@ export default function SettingSize() {
         <Text
           style={{
             marginHorizontal: SIZES.padding * 2,
+            marginTop: SIZES.padding,
             marginBottom: SIZES.base,
             color: COLOR.warning,
             ...FONTS.body4,
@@ -79,7 +80,6 @@ export default function SettingSize() {
         </Text>
         <View
           style={{
-            display: "flex",
             flexDirection: "column",
             alignItems: "center",
             backgroundColor: COLOR.primary,

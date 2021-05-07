@@ -16,7 +16,7 @@ export default function SettingStack() {
         name="Setting"
         component={SettingScreen}
         options={{
-          title: "Setting",
+          title: "Settings",
           headerStyle: {
             backgroundColor: COLOR.primary,
             shadowColor: COLOR.black,
