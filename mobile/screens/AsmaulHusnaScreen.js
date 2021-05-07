@@ -1,10 +1,35 @@
-import React, { useState } from "react";
-import { Text, View, FlatList } from "react-native";
+import React, { useEffect, useState } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Text, View, FlatList, I18nManager } from "react-native";
 import { dataAsmaulHusna } from "../data";
 import { COLOR, FONTS, SIZES } from "../styles";
 
 export default function AsmaulHusnaScreen(props) {
   const [asmaulHusna, setAsmaulHusna] = useState(dataAsmaulHusna);
+  const [fontArab, setFontArab] = useState("Uthmani");
+  const [initialX1, setInitialX1] = useState(1);
+  const [initialY1, setInitialY1] = useState(1);
+  const [initialX2, setInitialX2] = useState(1);
+  const [initialY2, setInitialY2] = useState(1);
+
+  async function getFontArab() {
+    const jsonValue = await AsyncStorage.getItem("fontArab");
+    const { value } = JSON.parse(jsonValue);
+    return jsonValue != null ? setFontArab(value) : null;
+  }
+
+  async function transformBox() {
+    await setInitialX1(-1);
+    await setInitialY1(1);
+    await setInitialX2(-1);
+    await setInitialY2(1);
+  }
+
+  useEffect(() => {
+    getFontArab();
+    transformBox();
+  }, [fontArab, initialX1, initialX2, initialY1, initialY2]);
+
   return (
     <FlatList
       data={asmaulHusna}
@@ -14,12 +39,14 @@ export default function AsmaulHusnaScreen(props) {
       contentContainerStyle={{
         paddingVertical: SIZES.padding,
         alignItems: "center",
+        transform: [{ scaleY: initialY1 }, { scaleX: initialX1 }],
       }}
       renderItem={({ item }) => (
         <View
           style={{
             marginHorizontal: SIZES.padding,
             marginVertical: SIZES.padding,
+            transform: [{ scaleY: initialY2 }, { scaleX: initialX2 }],
           }}
         >
           <View
@@ -33,24 +60,40 @@ export default function AsmaulHusnaScreen(props) {
               justifyContent: "center",
             }}
           >
-            <View style={{ alignItems: "center" }}>
+            <View style={{ alignItems: "center", marginHorizontal: SIZES.padding }}>
               {item.id != 85 ? (
                 <Text
-                  style={{
-                    color: COLOR.danger,
-                    textAlign: "center",
-                    ...FONTS.arab1,
-                  }}
+                  style={
+                    fontArab === "Lateef"
+                      ? {
+                          color: COLOR.danger,
+                          textAlign: "center",
+                          ...FONTS.arab1,
+                        }
+                      : {
+                          color: COLOR.danger,
+                          textAlign: "center",
+                          ...FONTS.arabUthmani2,
+                        }
+                  }
                 >
                   {item.arab}
                 </Text>
               ) : (
                 <Text
-                  style={{
-                    color: COLOR.danger,
-                    textAlign: "center",
-                    ...FONTS.arab3,
-                  }}
+                  style={
+                    fontArab === "Lateef"
+                      ? {
+                          color: COLOR.danger,
+                          textAlign: "center",
+                          ...FONTS.arab4,
+                        }
+                      : {
+                          color: COLOR.danger,
+                          textAlign: "center",
+                          ...FONTS.arabUthmani5,
+                        }
+                  }
                 >
                   {item.arab}
                 </Text>
