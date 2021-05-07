@@ -28,7 +28,6 @@ export default function CardDua(props) {
     try {
       const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
       const { value } = JSON.parse(jsonValue);
-      console.log(jsonValue);
       return jsonValue != null ? setSizeTerjemah(value) : null;
     } catch (e) {}
   }
@@ -76,12 +75,11 @@ export default function CardDua(props) {
   }, [isTranslate, sizeArab, sizeTerjemah]);
 
   return (
-    <View style={{ alignItems: "center" }}>
+    <View style={{ alignItems: "center", marginBottom: SIZES.padding * 2 }}>
       <View
         style={{
           flex: 1,
           backgroundColor: COLOR.primary,
-          marginBottom: SIZES.padding * 2,
           paddingHorizontal: SIZES.padding * 2,
           paddingVertical: SIZES.padding * 2,
           width: SIZES.width - SIZES.padding * 5,
@@ -117,7 +115,7 @@ export default function CardDua(props) {
             <Text
               style={{
                 color: COLOR.danger,
-                marginTop: SIZES.padding,
+                marginBottom: SIZES.padding,
                 ...FONTS.body4,
               }}
             >

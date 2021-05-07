@@ -19,7 +19,6 @@ export default function DetailDua(props) {
     try {
       const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
       const { value } = JSON.parse(jsonValue);
-      console.log(jsonValue);
       return jsonValue != null ? setSizeTerjemah(value) : null;
     } catch (e) {}
   }

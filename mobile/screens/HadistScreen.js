@@ -26,7 +26,7 @@ export default function HadistScreen({ navigation }) {
           style={{
             backgroundColor: COLOR.primary,
             width: SIZES.width - SIZES.padding * 4,
-            marginVertical: SIZES.base,
+            marginBottom: SIZES.padding,
             padding: SIZES.padding * 2,
             borderRadius: SIZES.padding,
           }}
@@ -45,7 +45,7 @@ export default function HadistScreen({ navigation }) {
             style={{
               textAlign: "center",
               color: COLOR.gray,
-              ...FONTS.body2,
+              ...FONTS.body4,
             }}
           >
             {item.judul}

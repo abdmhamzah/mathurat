@@ -66,9 +66,7 @@ export default function DzikirCounterScreen() {
       const jsonValue = await AsyncStorage.getItem("dzikir");
       const { value } = JSON.parse(jsonValue);
       return jsonValue != null ? setCounter(value) : setCounter(0);
-    } catch (e) {
-      // error reading value
-    }
+    } catch (e) {}
   }
 
   useEffect(() => {
@@ -76,7 +74,7 @@ export default function DzikirCounterScreen() {
   }, []);
 
   return (
-    <View style={{ alignItems: "center" }}>
+    <View style={{ alignItems: "center", justifyContent: "center" }}>
       <FlatList
         data={dataDzikir}
         keyExtractor={(item) => item.id}
@@ -97,21 +95,20 @@ export default function DzikirCounterScreen() {
         onPress={addCounter}
         style={{
           height: SIZES.height / 2.4,
-          width: SIZES.width / 1.1,
+          width: SIZES.height / 2.4,
           borderRadius: SIZES.height / 3,
           backgroundColor: COLOR.primary,
           alignItems: "center",
           justifyContent: "center",
-          marginTop: SIZES.padding * 4,
+          marginTop: SIZES.padding * 3,
         }}
       >
-        <Text style={{ fontSize: 170, color: COLOR.warning }}>{counter}</Text>
+        <Text style={{ fontSize: 100, color: COLOR.warning }}>{counter}</Text>
       </TouchableOpacity>
       <View
         style={{
-          display: "flex",
           flexDirection: "row",
-          marginVertical: SIZES.padding * 6,
+          marginVertical: SIZES.padding * 3,
           marginHorizontal: SIZES.padding,
         }}
       >

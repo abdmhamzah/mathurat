@@ -5,6 +5,7 @@ import { SIZES } from "../styles";
 
 export default function DetailHadistScreen({ route }) {
   const { judul, arab, terjemah } = route.params;
+
   return (
     <ScrollView
       contentContainerStyle={{ marginVertical: SIZES.padding }}

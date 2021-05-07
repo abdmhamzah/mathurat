@@ -22,6 +22,7 @@ export default function App() {
     circularBold: require("./assets/fonts/lineto-circular-black.ttf"),
     circular: require("./assets/fonts/lineto-circular-book.ttf"),
     lateef: require("./assets/fonts/Lateef-Regular.ttf"),
+    uthmani: require("./assets/fonts/Uthmanic-Regular.otf"),
   });
 
   if (!fontsLoaded) {

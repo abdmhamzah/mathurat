@@ -166,7 +166,7 @@ export default function SettingMathurat() {
           marginTop: SIZES.padding * 2,
           marginBottom: SIZES.base,
           color: COLOR.warning,
-          ...FONTS.body3,
+          ...FONTS.body4,
         }}
       >
         AL MA'TSURAT

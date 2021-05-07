@@ -23,7 +23,7 @@ export default function DoaSholatScreen({ navigation }) {
             flex: 1,
             backgroundColor: COLOR.primary,
             marginHorizontal: SIZES.padding * 2,
-            marginVertical: SIZES.base,
+            marginBottom: SIZES.padding,
             padding: SIZES.padding * 2,
             borderRadius: SIZES.padding,
           }}

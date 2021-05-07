@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, TouchableOpacity, Image } from "react-native";
+import { Text, View, TouchableOpacity, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { FONTS, SIZES, COLOR } from "../styles";
 
@@ -14,27 +14,35 @@ export default function CardMenu(props) {
     <TouchableOpacity
       onPress={goToTitle}
       style={{
-        flex: 1,
-        backgroundColor: COLOR.primary,
-        width: SIZES.base * 9,
-        marginHorizontal: SIZES.padding * 2,
-        marginVertical: SIZES.padding * 2,
-        paddingVertical: SIZES.padding * 2,
-        alignItems: "center",
-        borderRadius: 8,
+        marginHorizontal: SIZES.padding,
+        marginVertical: SIZES.padding,
       }}
     >
-      <Image
-        source={props.logo}
+      <View
         style={{
-          height: SIZES.padding * 9,
-          width: SIZES.padding * 9,
-          marginBottom: SIZES.padding2,
+          height: 155,
+          width: SIZES.width / 2 - SIZES.padding * 3,
+          backgroundColor: COLOR.primary,
+          padding: SIZES.padding,
+          borderRadius: SIZES.padding,
+          alignItems: "center",
+          justifyContent: "center",
         }}
-      />
-      <Text style={{ color: COLOR.warning, textAlign: "center", ...FONTS.h4 }}>
-        {props.title}
-      </Text>
+      >
+        <Image
+          source={props.logo}
+          style={{
+            height: SIZES.width / 5,
+            width: SIZES.width / 5,
+            marginBottom: SIZES.padding2,
+          }}
+        />
+        <Text
+          style={{ color: COLOR.warning, textAlign: "center", ...FONTS.h4 }}
+        >
+          {props.title}
+        </Text>
+      </View>
     </TouchableOpacity>
   );
 }

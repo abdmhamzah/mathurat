@@ -26,7 +26,7 @@ export default function MathuratSore() {
       keyExtractor={(item) => item.id}
       data={isKubro ? mathuratKubro : mathuratSughra}
       showsVerticalScrollIndicator={false}
-      contentContainerStyle={{ paddingVertical: SIZES.padding * 3 }}
+      contentContainerStyle={{ paddingVertical: SIZES.padding * 2 }}
       renderItem={({ item }) => (
         <CardDua
           judul={item.judul}

@@ -57,12 +57,14 @@ export default function HomeScreen({ navigation }) {
           />
         </TouchableOpacity>
       </View>
-      <View style={{ flex: 9 }}>
+      <View style={{ flex: 9, alignItems: "center" }}>
         <FlatList
           numColumns={2}
           data={title}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ paddingVertical: SIZES.padding }}
+          contentContainerStyle={{
+            paddingVertical: SIZES.padding,
+          }}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
             <ButtonMenu title={item.name} logo={item.logo} />

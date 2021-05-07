@@ -36,7 +36,7 @@ export default function DzikirCard(props) {
             marginVertical: SIZES.padding,
             paddingHorizontal: SIZES.padding,
             textAlign: "center",
-            ...FONTS.body3,
+            ...FONTS.body5,
           }}
         >
           {props.terjemah}
