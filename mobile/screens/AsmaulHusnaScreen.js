@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { Text, View, FlatList, I18nManager } from "react-native";
+import { Text, View, FlatList } from "react-native";
 import { dataAsmaulHusna } from "../data";
 import { COLOR, FONTS, SIZES } from "../styles";
 
@@ -111,7 +111,7 @@ export default function AsmaulHusnaScreen(props) {
           </View>
           <View
             style={{
-              height: 75,
+              height: 70,
               width: SIZES.width / 2 - SIZES.padding * 3,
               backgroundColor: COLOR.primary,
               borderTopWidth: 1,
@@ -126,7 +126,7 @@ export default function AsmaulHusnaScreen(props) {
               style={{
                 textAlign: "center",
                 color: COLOR.gray,
-                ...FONTS.body5,
+                ...FONTS.info,
               }}
             >
               {item.terjemah}

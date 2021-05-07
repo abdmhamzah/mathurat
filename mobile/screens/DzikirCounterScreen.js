@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { Text, View, TouchableOpacity, Alert, FlatList } from "react-native";
+import React, { useEffect, useState, useRef } from "react";
+import { Text, View, TouchableOpacity, Alert } from "react-native";
 import * as Haptics from "expo-haptics";
-import { FontAwesome } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import Carousel from "react-native-snap-carousel";
+import { FontAwesome } from "@expo/vector-icons";
 import { dataDzikir } from "../data/dataDzikir";
 import { DzikirCard } from "../components";
 import { COLOR, SIZES } from "../styles";
 
 export default function DzikirCounterScreen() {
+  const carouselRef = useRef("");
   const [counter, setCounter] = useState(0);
 
   function addCounter() {
@@ -71,36 +73,36 @@ export default function DzikirCounterScreen() {
 
   useEffect(() => {
     getCounter();
-  }, []);
+  }, [counter]);
 
   return (
-    <View style={{ alignItems: "center", justifyContent: "center" }}>
-      <FlatList
+    <View style={{ alignItems: "center" }}>
+      <Carousel
+        ref={carouselRef}
         data={dataDzikir}
-        keyExtractor={(item) => item.id}
+        sliderWidth={SIZES.width}
+        itemWidth={(SIZES.width * 2) / 3}
+        layout={"stack"}
+        layoutCardOffset={18}
+        containerCustomStyle={{ marginTop: SIZES.padding * 2, height: (SIZES.height * 2) / 7 }}
         renderItem={({ item }) => (
-          <DzikirCard arab={item.arab} terjemah={item.terjemah} />
+          <DzikirCard
+            arab={item.arab}
+            translate={item.terjemah}
+            transliterasi={item.transliterasi}
+          />
         )}
-        contentContainerStyle={{ marginTop: SIZES.padding * 2 }}
-        pagingEnabled
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentInsetAdjustmentBehavior="never"
-        snapToAlignment="center"
-        decelerationRate="fast"
-        automaticallyAdjustContentInsets={false}
-        scrollEventThrottle={1}
       />
       <TouchableOpacity
         onPress={addCounter}
         style={{
-          height: SIZES.height / 2.4,
-          width: SIZES.height / 2.4,
+          height: SIZES.width - SIZES.padding * 8,
+          width: SIZES.width - SIZES.padding * 8,
           borderRadius: SIZES.height / 3,
           backgroundColor: COLOR.primary,
           alignItems: "center",
           justifyContent: "center",
-          marginTop: SIZES.padding * 3,
+          // marginTop: SIZES.padding * 4,
         }}
       >
         <Text style={{ fontSize: 100, color: COLOR.warning }}>{counter}</Text>
@@ -108,7 +110,7 @@ export default function DzikirCounterScreen() {
       <View
         style={{
           flexDirection: "row",
-          marginVertical: SIZES.padding * 3,
+          marginTop: SIZES.padding * 3,
           marginHorizontal: SIZES.padding,
         }}
       >
@@ -116,66 +118,57 @@ export default function DzikirCounterScreen() {
           onPress={resetCounter}
           style={{
             flex: 1,
+            height: 50,
             marginHorizontal: SIZES.padding,
             backgroundColor: COLOR.primary,
             justifyContent: "center",
             alignItems: "center",
             borderRadius: SIZES.base,
-            paddingVertical: SIZES.padding * 2,
+            paddingVertical: SIZES.padding,
           }}
         >
           <FontAwesome
             name="repeat"
             size={30}
-            style={
-              counter === 0
-                ? { color: COLOR.secondary }
-                : { color: COLOR.danger }
-            }
+            style={counter === 0 ? { color: COLOR.secondary } : { color: COLOR.danger }}
           />
         </TouchableOpacity>
         <TouchableOpacity
           onPress={reduceCounter}
           style={{
             flex: 1,
+            height: 50,
             marginHorizontal: SIZES.padding,
             backgroundColor: COLOR.primary,
             justifyContent: "center",
             alignItems: "center",
             borderRadius: SIZES.base,
-            paddingVertical: SIZES.padding * 2,
+            paddingVertical: SIZES.padding,
           }}
         >
           <FontAwesome
             name="minus"
             size={30}
-            style={
-              counter === 0
-                ? { color: COLOR.secondary }
-                : { color: COLOR.danger }
-            }
+            style={counter === 0 ? { color: COLOR.secondary } : { color: COLOR.danger }}
           />
         </TouchableOpacity>
         <TouchableOpacity
           onPress={saveCounter}
           style={{
             flex: 1,
+            height: 50,
             marginHorizontal: SIZES.padding,
             backgroundColor: COLOR.primary,
             justifyContent: "center",
             alignItems: "center",
             borderRadius: SIZES.base,
-            paddingVertical: SIZES.padding * 2,
+            paddingVertical: SIZES.padding,
           }}
         >
           <FontAwesome
             name="star"
             size={30}
-            style={
-              counter === 0
-                ? { color: COLOR.secondary }
-                : { color: COLOR.danger }
-            }
+            style={counter === 0 ? { color: COLOR.secondary } : { color: COLOR.danger }}
           />
         </TouchableOpacity>
       </View>
