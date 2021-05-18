@@ -37,9 +37,7 @@ export default function CardMenu(props) {
             marginBottom: SIZES.padding2,
           }}
         />
-        <Text
-          style={{ color: COLOR.warning, textAlign: "center", ...FONTS.h4 }}
-        >
+        <Text style={{ color: COLOR.warning, textAlign: "center", ...FONTS.h4 }}>
           {props.title}
         </Text>
       </View>

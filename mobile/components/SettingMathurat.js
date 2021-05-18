@@ -12,7 +12,7 @@ export default function SettingMathurat() {
     try {
       const jsonValue = await AsyncStorage.getItem("translate");
       const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setIsTranslate(value) : null;
+      return jsonValue != null ? setIsTranslate(value) : setIsTranslate(false);
     } catch (e) {
       // error reading value
     }
@@ -22,7 +22,7 @@ export default function SettingMathurat() {
     try {
       const jsonValue = await AsyncStorage.getItem("kubro");
       const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setIsKubro(value) : null;
+      return jsonValue != null ? setIsKubro(value) : setIsKubro(false);
     } catch (e) {
       // error reading value
     }
@@ -32,7 +32,7 @@ export default function SettingMathurat() {
     try {
       const jsonValue = await AsyncStorage.getItem("cc");
       const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setIsCc(value) : null;
+      return jsonValue != null ? setIsCc(value) : setIsCc(false);
     } catch (e) {
       // error reading value
     }
@@ -72,11 +72,7 @@ export default function SettingMathurat() {
           Aktifkan Ma'tsurat Kubro
         </Text>
         <View style={{ flex: 1, alignItems: "flex-end" }}>
-          <Switch
-            value={isKubro}
-            onValueChange={changeKubro}
-            trackColor={{ true: COLOR.danger }}
-          />
+          <Switch value={isKubro} onValueChange={changeKubro} trackColor={{ true: COLOR.danger }} />
         </View>
       </View>
     );
@@ -106,15 +102,9 @@ export default function SettingMathurat() {
           paddingVertical: SIZES.base,
         }}
       >
-        <Text style={{ flex: 10, color: COLOR.gray, ...FONTS.body2 }}>
-          Tampilkan Transliterasi
-        </Text>
+        <Text style={{ flex: 10, color: COLOR.gray, ...FONTS.body2 }}>Tampilkan Transliterasi</Text>
         <View style={{ flex: 1, alignItems: "flex-end" }}>
-          <Switch
-            value={isCc}
-            onValueChange={changeCc}
-            trackColor={{ true: COLOR.danger }}
-          />
+          <Switch value={isCc} onValueChange={changeCc} trackColor={{ true: COLOR.danger }} />
         </View>
       </View>
     );
@@ -144,9 +134,7 @@ export default function SettingMathurat() {
           paddingVertical: SIZES.base,
         }}
       >
-        <Text style={{ flex: 10, color: COLOR.gray, ...FONTS.body2 }}>
-          Tampilkan Artinya
-        </Text>
+        <Text style={{ flex: 10, color: COLOR.gray, ...FONTS.body2 }}>Tampilkan Artinya</Text>
         <View style={{ flex: 1, alignItems: "flex-end" }}>
           <Switch
             value={isTranslate}

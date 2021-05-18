@@ -28,12 +28,12 @@ export default function HomeScreen({ navigation }) {
     <View style={{ flex: 1, backgroundColor: COLOR.secondary }}>
       <View
         style={{
-          flex: 1,
-          alignItems: "center",
+          flex: 1.15,
+          alignItems: "flex-end",
           flexDirection: "row",
           backgroundColor: COLOR.primary,
-          paddingTop: SIZES.padding * 3,
           paddingHorizontal: SIZES.padding * 2,
+          paddingBottom: SIZES.padding * 2,
           shadowOffset: { width: 0, height: 2 },
           shadowColor: COLOR.black,
         }}
@@ -57,7 +57,7 @@ export default function HomeScreen({ navigation }) {
           />
         </TouchableOpacity>
       </View>
-      <View style={{ flex: 9, alignItems: "center" }}>
+      <View style={{ flex: 8.85, alignItems: "center" }}>
         <FlatList
           numColumns={2}
           data={title}
@@ -66,9 +66,7 @@ export default function HomeScreen({ navigation }) {
             paddingVertical: SIZES.padding,
           }}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <ButtonMenu title={item.name} logo={item.logo} />
-          )}
+          renderItem={({ item }) => <ButtonMenu title={item.name} logo={item.logo} />}
         />
       </View>
     </View>

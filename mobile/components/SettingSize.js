@@ -16,14 +16,14 @@ export default function SettingSize() {
   async function getFontArab() {
     const jsonValue = await AsyncStorage.getItem("fontArab");
     const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : null;
+    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
   }
 
   async function getSizeArab() {
     try {
       const jsonValue = await AsyncStorage.getItem("sizeArab");
       const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeArab(value) : null;
+      return jsonValue != null ? setSizeArab(value) : setSizeArab(35);
     } catch (e) {}
   }
 
@@ -31,7 +31,7 @@ export default function SettingSize() {
     try {
       const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
       const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeTerjemah(value) : null;
+      return jsonValue != null ? setSizeTerjemah(value) : setSizeTerjemah(18);
     } catch (e) {}
   }
 

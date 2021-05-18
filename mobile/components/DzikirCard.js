@@ -10,11 +10,13 @@ export default function DzikirCard(props) {
   async function getFontArab() {
     const jsonValue = await AsyncStorage.getItem("fontArab");
     const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : null;
+    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
   }
+
   useEffect(() => {
     getFontArab();
   }, [fontArab]);
+
   return (
     <View
       style={{

@@ -6,21 +6,21 @@ import { fontArabChecker, fontLatinChecker } from "../helpers";
 
 export default function CardDua(props) {
   const [isTranslate, setIsTranslate] = useState(false);
-  const [sizeArab, setSizeArab] = useState(30);
-  const [sizeTerjemah, setSizeTerjemah] = useState(14);
+  const [sizeArab, setSizeArab] = useState(35);
+  const [sizeTerjemah, setSizeTerjemah] = useState(18);
   const [fontArab, setFontArab] = useState("Uthmani");
 
   async function getFontArab() {
     const jsonValue = await AsyncStorage.getItem("fontArab");
     const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : null;
+    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
   }
 
   async function getTranslate() {
     try {
       const jsonValue = await AsyncStorage.getItem("translate");
       const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setIsTranslate(value) : null;
+      return jsonValue != null ? setIsTranslate(value) : setIsTranslate(false);
     } catch (e) {}
   }
 
@@ -28,7 +28,7 @@ export default function CardDua(props) {
     try {
       const jsonValue = await AsyncStorage.getItem("sizeArab");
       const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeArab(value) : null;
+      return jsonValue != null ? setSizeArab(value) : setSizeArab(35);
     } catch (e) {}
   }
 
@@ -36,7 +36,7 @@ export default function CardDua(props) {
     try {
       const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
       const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeTerjemah(value) : null;
+      return jsonValue != null ? setSizeTerjemah(value) : setSizeTerjemah(18);
     } catch (e) {}
   }
 
@@ -63,21 +63,21 @@ export default function CardDua(props) {
           style={{
             display: "flex",
             flexDirection: "row",
-            alignItems: "center",
+            // alignItems: "center",
           }}
         >
-          <Text style={{ flex: 1, color: COLOR.warning, ...FONTS.body2 }}>
-            Dibaca {props.pengulangan}x
-          </Text>
           <Text
             style={{
-              flex: 1,
-              textAlign: "right",
+              flex: 6,
+              textAlign: "left",
               color: COLOR.warning,
               ...FONTS.body2,
             }}
           >
             {props.judul}
+          </Text>
+          <Text style={{ flex: 4, textAlign: "right", color: COLOR.warning, ...FONTS.body2 }}>
+            Dibaca {props.pengulangan}x
           </Text>
         </View>
         <View style={{ marginTop: SIZES.padding }}>

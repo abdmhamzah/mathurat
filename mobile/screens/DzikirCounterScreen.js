@@ -73,7 +73,7 @@ export default function DzikirCounterScreen() {
 
   useEffect(() => {
     getCounter();
-  }, [counter]);
+  }, []);
 
   return (
     <View style={{ alignItems: "center" }}>

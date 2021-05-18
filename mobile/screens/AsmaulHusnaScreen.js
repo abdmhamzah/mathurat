@@ -15,7 +15,7 @@ export default function AsmaulHusnaScreen(props) {
   async function getFontArab() {
     const jsonValue = await AsyncStorage.getItem("fontArab");
     const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : null;
+    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
   }
 
   async function transformBox() {
