@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Text, FlatList, TouchableOpacity } from "react-native";
 import { dataDoaSholat } from "../data/dataDoaSholat";
 import { COLOR, SIZES, FONTS } from "../styles";
+import { SettingContext } from "../contexts/SettingProvider";
 
 export default function DoaSholatScreen({ navigation }) {
+  const { sizeArab, sizeTerjemah, fontArab } = useContext(SettingContext);
+
   return (
     <FlatList
       data={dataDoaSholat}

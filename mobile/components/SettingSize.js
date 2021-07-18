@@ -1,45 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useContext } from "react";
 import { Text, View, TouchableWithoutFeedback } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLOR, FONTS, SIZES } from "../styles";
 import { fontArabChecker, fontLatinChecker } from "../helpers";
+import { SettingContext } from "../contexts/SettingProvider";
 
 export default function SettingSize() {
-  const [sizeArab, setSizeArab] = useState(35);
-  const [sizeTerjemah, setSizeTerjemah] = useState(18);
-  const [fontArab, setFontArab] = useState("Uthmani");
   const [toggleSizeArab, setToggleSizeArab] = useState(false);
   const [toggleSizeTerjemah, setToggleSizeTerjemah] = useState(false);
   const [toggleFontArab, setToggleFontArab] = useState(false);
 
-  async function getFontArab() {
-    const jsonValue = await AsyncStorage.getItem("fontArab");
-    const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
-  }
-
-  async function getSizeArab() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("sizeArab");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeArab(value) : setSizeArab(35);
-    } catch (e) {}
-  }
-
-  async function getSizeTerjemah() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeTerjemah(value) : setSizeTerjemah(18);
-    } catch (e) {}
-  }
-
-  useEffect(() => {
-    getFontArab();
-    getSizeArab();
-    getSizeTerjemah();
-  }, [sizeArab, sizeTerjemah, fontArab]);
+  const {
+    fontArab,
+    setFontArab,
+    sizeArab,
+    setSizeArab,
+    sizeTerjemah,
+    setSizeTerjemah,
+  } = useContext(SettingContext);
 
   const settingSizeArab = () => {
     function changeSizeArab(value) {
@@ -89,7 +68,9 @@ export default function SettingSize() {
             paddingVertical: SIZES.base * 1.4,
           }}
         >
-          <TouchableWithoutFeedback onPress={() => setToggleSizeArab(!toggleSizeArab)}>
+          <TouchableWithoutFeedback
+            onPress={() => setToggleSizeArab(!toggleSizeArab)}
+          >
             <View
               style={{
                 flexDirection: "row",
@@ -97,7 +78,9 @@ export default function SettingSize() {
                 justifyContent: "space-between",
               }}
             >
-              <Text style={{ flex: 9, color: COLOR.gray, ...FONTS.body2 }}>Ukuran Font Arab</Text>
+              <Text style={{ flex: 9, color: COLOR.gray, ...FONTS.body2 }}>
+                Ukuran Font Arab
+              </Text>
               <Text
                 style={{
                   flex: 1,
@@ -128,7 +111,9 @@ export default function SettingSize() {
               }}
               itemStyle={{ color: COLOR.white }}
               selectedValue={sizeArab}
-              onValueChange={(itemValue, itemIndex) => changeSizeArab(itemValue)}
+              onValueChange={(itemValue, itemIndex) =>
+                changeSizeArab(itemValue)
+              }
             >
               <Picker.Item label="30" value="30" />
               <Picker.Item label="35" value="35" />
@@ -163,7 +148,9 @@ export default function SettingSize() {
             paddingVertical: SIZES.base * 1.4,
           }}
         >
-          <TouchableWithoutFeedback onPress={() => setToggleSizeTerjemah(!toggleSizeTerjemah)}>
+          <TouchableWithoutFeedback
+            onPress={() => setToggleSizeTerjemah(!toggleSizeTerjemah)}
+          >
             <View
               style={{
                 flexDirection: "row",
@@ -204,7 +191,9 @@ export default function SettingSize() {
               }}
               itemStyle={{ color: COLOR.white }}
               selectedValue={sizeTerjemah}
-              onValueChange={(itemValue, itemIndex) => changeSizeTerjemah(itemValue)}
+              onValueChange={(itemValue, itemIndex) =>
+                changeSizeTerjemah(itemValue)
+              }
             >
               <Picker.Item label="12" value="12" />
               <Picker.Item label="14" value="14" />
@@ -238,7 +227,9 @@ export default function SettingSize() {
             paddingVertical: SIZES.base * 1.4,
           }}
         >
-          <TouchableWithoutFeedback onPress={() => setToggleFontArab(!toggleFontArab)}>
+          <TouchableWithoutFeedback
+            onPress={() => setToggleFontArab(!toggleFontArab)}
+          >
             <View
               style={{
                 flexDirection: "row",
@@ -246,7 +237,9 @@ export default function SettingSize() {
                 justifyContent: "space-between",
               }}
             >
-              <Text style={{ flex: 6, color: COLOR.gray, ...FONTS.body2 }}>Font Arab</Text>
+              <Text style={{ flex: 6, color: COLOR.gray, ...FONTS.body2 }}>
+                Font Arab
+              </Text>
               <Text
                 style={{
                   flex: 4,
@@ -277,7 +270,9 @@ export default function SettingSize() {
               }}
               itemStyle={{ color: COLOR.white }}
               selectedValue={fontArab}
-              onValueChange={(itemValue, itemIndex) => changeFontArab(itemValue)}
+              onValueChange={(itemValue, itemIndex) =>
+                changeFontArab(itemValue)
+              }
             >
               <Picker.Item label="Uthmani" value="Uthmani" />
               <Picker.Item label="Lateef" value="Lateef" />

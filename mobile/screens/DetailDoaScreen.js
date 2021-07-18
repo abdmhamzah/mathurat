@@ -1,42 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { View, Text, FlatList } from "react-native";
 import { FONTS, SIZES, COLOR } from "../styles";
 import { fontLatinChecker, fontArabChecker } from "../helpers";
+import { SettingContext } from "../contexts/SettingProvider";
 
 export default function DetailDoaScreen({ route }) {
   const { data } = route.params;
-  const [sizeArab, setSizeArab] = useState(35);
-  const [sizeTerjemah, setSizeTerjemah] = useState(18);
-  const [fontArab, setFontArab] = useState("Uthmani");
-
-  async function getFontArab() {
-    const jsonValue = await AsyncStorage.getItem("fontArab");
-    const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
-  }
-
-  async function getArabSize() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("sizeArab");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeArab(value) : setSizeArab(35);
-    } catch (e) {}
-  }
-
-  async function getTranslateSize() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeTerjemah(value) : setSizeTerjemah(18);
-    } catch (e) {}
-  }
-
-  useEffect(() => {
-    getFontArab();
-    getArabSize();
-    getTranslateSize();
-  }, [sizeArab, sizeTerjemah]);
+  const { sizeArab, sizeTerjemah, fontArab } = useContext(SettingContext);
 
   return (
     <FlatList

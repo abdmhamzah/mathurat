@@ -1,22 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Text, View, FlatList } from "react-native";
 import { dataAsmaulHusna } from "../data";
 import { COLOR, FONTS, SIZES } from "../styles";
+import { SettingContext } from "../contexts/SettingProvider";
 
 export default function AsmaulHusnaScreen(props) {
+  const { fontArab } = useContext(SettingContext);
   const [asmaulHusna, setAsmaulHusna] = useState(dataAsmaulHusna);
-  const [fontArab, setFontArab] = useState("Uthmani");
   const [initialX1, setInitialX1] = useState(1);
   const [initialY1, setInitialY1] = useState(1);
   const [initialX2, setInitialX2] = useState(1);
   const [initialY2, setInitialY2] = useState(1);
-
-  async function getFontArab() {
-    const jsonValue = await AsyncStorage.getItem("fontArab");
-    const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
-  }
 
   async function transformBox() {
     await setInitialX1(-1);
@@ -26,7 +21,6 @@ export default function AsmaulHusnaScreen(props) {
   }
 
   useEffect(() => {
-    getFontArab();
     transformBox();
   }, [fontArab, initialX1, initialX2, initialY1, initialY2]);
 
@@ -60,7 +54,9 @@ export default function AsmaulHusnaScreen(props) {
               justifyContent: "center",
             }}
           >
-            <View style={{ alignItems: "center", marginHorizontal: SIZES.padding }}>
+            <View
+              style={{ alignItems: "center", marginHorizontal: SIZES.padding }}
+            >
               {item.id != 85 ? (
                 <Text
                   style={
