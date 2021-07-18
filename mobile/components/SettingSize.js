@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Text, View, TouchableWithoutFeedback } from "react-native";
 import { Picker } from "@react-native-picker/picker";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLOR, FONTS, SIZES } from "../styles";
 import { fontArabChecker, fontLatinChecker } from "../helpers";
 import { SettingContext } from "../contexts/SettingProvider";
@@ -21,12 +20,6 @@ export default function SettingSize() {
   } = useContext(SettingContext);
 
   const settingSizeArab = () => {
-    function changeSizeArab(value) {
-      setSizeArab(value);
-      const jsonValue = JSON.stringify({ value });
-      AsyncStorage.setItem("sizeArab", jsonValue);
-    }
-
     return (
       <View style={{ flexDirection: "column", marginTop: SIZES.padding * 2 }}>
         <View style={{ width: SIZES.width, alignItems: "center" }}>
@@ -110,10 +103,8 @@ export default function SettingSize() {
                 position: "absolute",
               }}
               itemStyle={{ color: COLOR.white }}
-              selectedValue={sizeArab}
-              onValueChange={(itemValue, itemIndex) =>
-                changeSizeArab(itemValue)
-              }
+              selectedValue={`${sizeArab}`}
+              onValueChange={(itemValue, itemIndex) => setSizeArab(itemValue)}
             >
               <Picker.Item label="30" value="30" />
               <Picker.Item label="35" value="35" />
@@ -128,12 +119,6 @@ export default function SettingSize() {
   };
 
   const settingSizeTerjemah = () => {
-    function changeSizeTerjemah(value) {
-      setSizeTerjemah(value);
-      const jsonValue = JSON.stringify({ value });
-      AsyncStorage.setItem("sizeTerjemah", jsonValue);
-    }
-
     return (
       <View style={{ flexDirection: "column" }}>
         <View
@@ -190,9 +175,9 @@ export default function SettingSize() {
                 position: "absolute",
               }}
               itemStyle={{ color: COLOR.white }}
-              selectedValue={sizeTerjemah}
+              selectedValue={`${sizeTerjemah}`}
               onValueChange={(itemValue, itemIndex) =>
-                changeSizeTerjemah(itemValue)
+                setSizeTerjemah(itemValue)
               }
             >
               <Picker.Item label="12" value="12" />
@@ -208,11 +193,6 @@ export default function SettingSize() {
   };
 
   function settingFontArab() {
-    function changeFontArab(value) {
-      setFontArab(value);
-      const jsonValue = JSON.stringify({ value });
-      AsyncStorage.setItem("fontArab", jsonValue);
-    }
     return (
       <View style={{ flexDirection: "column" }}>
         <View
@@ -270,9 +250,7 @@ export default function SettingSize() {
               }}
               itemStyle={{ color: COLOR.white }}
               selectedValue={fontArab}
-              onValueChange={(itemValue, itemIndex) =>
-                changeFontArab(itemValue)
-              }
+              onValueChange={(itemValue, itemIndex) => setFontArab(itemValue)}
             >
               <Picker.Item label="Uthmani" value="Uthmani" />
               <Picker.Item label="Lateef" value="Lateef" />
