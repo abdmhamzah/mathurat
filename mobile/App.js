@@ -14,6 +14,7 @@ import {
   MathuratSoreStack,
   SettingStack,
 } from "./stacks";
+import { COLOR } from "./styles";
 import { SettingProvider } from "./contexts/SettingProvider";
 
 const Stack = createStackNavigator();
@@ -32,7 +33,7 @@ export default function App() {
 
   return (
     <SettingProvider>
-      <NavigationContainer theme={{ colors: { background: "#48426d" } }}>
+      <NavigationContainer theme={{ colors: { background: COLOR.secondary } }}>
         <Stack.Navigator
           initialRouteName="Home"
           screenOptions={{
