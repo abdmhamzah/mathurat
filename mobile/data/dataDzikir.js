@@ -1,9 +1,9 @@
 export const dataDzikir = [
   {
     id: "1",
-    arab: "اَسْتَغْفِرُاللهَ",
-    terjemah: "Aku memohon ampun kepada Allah.",
-    transliterasi: "Astaghfirullah",
+    arab: "اَسْتَغْفِرُاللهَ الْعَظِيْمَ",
+    terjemah: "Aku mohon ampun kepada Allah yang Maha Agung.",
+    transliterasi: "Astaghfirullahal’adzim",
   },
   {
     id: "2",
