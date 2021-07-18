@@ -1,51 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Text, View } from "react-native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLOR, SIZES, FONTS } from "../styles";
 import { fontArabChecker, fontLatinChecker } from "../helpers";
+import { SettingContext } from "../contexts/SettingProvider";
 
 export default function CardDua(props) {
-  const [isTranslate, setIsTranslate] = useState(false);
-  const [sizeArab, setSizeArab] = useState(35);
-  const [sizeTerjemah, setSizeTerjemah] = useState(18);
-  const [fontArab, setFontArab] = useState("Uthmani");
-
-  async function getFontArab() {
-    const jsonValue = await AsyncStorage.getItem("fontArab");
-    const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
-  }
-
-  async function getTranslate() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("translate");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setIsTranslate(value) : setIsTranslate(false);
-    } catch (e) {}
-  }
-
-  async function getArabSize() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("sizeArab");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeArab(value) : setSizeArab(35);
-    } catch (e) {}
-  }
-
-  async function getTranslateSize() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeTerjemah(value) : setSizeTerjemah(18);
-    } catch (e) {}
-  }
-
-  useEffect(() => {
-    getFontArab();
-    getTranslate();
-    getArabSize();
-    getTranslateSize();
-  }, [isTranslate, sizeArab, sizeTerjemah]);
+  const { fontArab, sizeArab, sizeTerjemah, isTranslate } =
+    useContext(SettingContext);
 
   return (
     <View style={{ alignItems: "center", marginBottom: SIZES.padding * 2 }}>
@@ -76,7 +37,14 @@ export default function CardDua(props) {
           >
             {props.judul}
           </Text>
-          <Text style={{ flex: 4, textAlign: "right", color: COLOR.warning, ...FONTS.body2 }}>
+          <Text
+            style={{
+              flex: 4,
+              textAlign: "right",
+              color: COLOR.warning,
+              ...FONTS.body2,
+            }}
+          >
             Dibaca {props.pengulangan}x
           </Text>
         </View>

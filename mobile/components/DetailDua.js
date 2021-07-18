@@ -1,41 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { Text, View } from "react-native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLOR, SIZES, FONTS } from "../styles";
 import { fontArabChecker, fontLatinChecker } from "../helpers";
+import { SettingContext } from "../contexts/SettingProvider";
 
 export default function DetailDua(props) {
-  const [sizeArab, setSizeArab] = useState(35);
-  const [sizeTerjemah, setSizeTerjemah] = useState(18);
-  const [fontArab, setFontArab] = useState("Uthmani");
-
-  async function getFontArab() {
-    const jsonValue = await AsyncStorage.getItem("fontArab");
-    const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
-  }
-
-  async function getArabSize() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("sizeArab");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeArab(value) : setSizeArab(35);
-    } catch (e) {}
-  }
-
-  async function getTranslateSize() {
-    try {
-      const jsonValue = await AsyncStorage.getItem("sizeTerjemah");
-      const { value } = JSON.parse(jsonValue);
-      return jsonValue != null ? setSizeTerjemah(value) : setSizeTerjemah(18);
-    } catch (e) {}
-  }
-
-  useEffect(() => {
-    getFontArab();
-    getArabSize();
-    getTranslateSize();
-  }, [sizeArab, sizeTerjemah]);
+  const { fontArab, sizeArab, sizeTerjemah } = useContext(SettingContext);
 
   return (
     <View

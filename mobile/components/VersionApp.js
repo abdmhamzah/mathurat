@@ -11,6 +11,7 @@ export default function VersionApp() {
         alignItems: "center",
         backgroundColor: COLOR.primary,
         marginTop: SIZES.padding * 4,
+        marginBottom: SIZES.padding * 4,
         paddingHorizontal: SIZES.padding * 2,
         paddingVertical: SIZES.base * 1.4,
       }}
