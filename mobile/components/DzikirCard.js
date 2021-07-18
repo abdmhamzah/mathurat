@@ -1,21 +1,10 @@
-import React, { useEffect, useState } from "react";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import React, { useContext } from "react";
 import { View, Text } from "react-native";
 import { FONTS, SIZES, COLOR } from "../styles";
-import { fontArabChecker } from "../helpers";
+import { SettingContext } from "../contexts/SettingProvider";
 
 export default function DzikirCard(props) {
-  const [fontArab, setFontArab] = useState("Uthmani");
-
-  async function getFontArab() {
-    const jsonValue = await AsyncStorage.getItem("fontArab");
-    const { value } = JSON.parse(jsonValue);
-    return jsonValue != null ? setFontArab(value) : setFontArab("Uthmani");
-  }
-
-  useEffect(() => {
-    getFontArab();
-  }, [fontArab]);
+  const { fontArab } = useContext(SettingContext);
 
   return (
     <View
@@ -65,7 +54,6 @@ export default function DzikirCard(props) {
         >
           {props.transliterasi.toUpperCase()}
         </Text>
-        {/* <Text style={{ color: COLOR.gray, ...FONTS.body5 }}>{props.translate}</Text> */}
       </View>
     </View>
   );
