@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Text, View, Switch } from "react-native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { COLOR, FONTS, SIZES } from "../styles";
 import { SettingContext } from "../contexts/SettingProvider";
 
@@ -9,16 +8,6 @@ export default function SettingMathurat() {
     useContext(SettingContext);
 
   const settingIsKubro = () => {
-    function changeKubro() {
-      setIsKubro(!isKubro);
-      const flag = isKubro;
-      if (flag !== isKubro) {
-      } else {
-        const jsonValue = JSON.stringify({ value: !isKubro });
-        AsyncStorage.setItem("kubro", jsonValue);
-      }
-    }
-
     return (
       <View
         style={{
@@ -38,7 +27,7 @@ export default function SettingMathurat() {
         <View style={{ flex: 1, alignItems: "flex-end" }}>
           <Switch
             value={isKubro}
-            onValueChange={changeKubro}
+            onValueChange={() => setIsKubro(!isKubro)}
             trackColor={{ true: COLOR.danger }}
           />
         </View>
@@ -47,16 +36,6 @@ export default function SettingMathurat() {
   };
 
   const settingIsCc = () => {
-    function changeCc() {
-      const flag = isCc;
-      setIsCc(!isCc);
-      if (flag !== isCc) {
-      } else {
-        const jsonValue = JSON.stringify({ value: !isCc });
-        AsyncStorage.setItem("cc", jsonValue);
-      }
-    }
-
     return (
       <View
         style={{
@@ -76,7 +55,7 @@ export default function SettingMathurat() {
         <View style={{ flex: 1, alignItems: "flex-end" }}>
           <Switch
             value={isCc}
-            onValueChange={changeCc}
+            onValueChange={() => setIsCc(!isCc)}
             trackColor={{ true: COLOR.danger }}
           />
         </View>
@@ -85,16 +64,6 @@ export default function SettingMathurat() {
   };
 
   const settingIsTranslate = () => {
-    function changeTranslate() {
-      const flag = isTranslate;
-      setIsTranslate(!isTranslate);
-      if (flag !== isTranslate) {
-      } else {
-        const jsonValue = JSON.stringify({ value: !isTranslate });
-        AsyncStorage.setItem("translate", jsonValue);
-      }
-    }
-
     return (
       <View
         style={{
@@ -114,7 +83,7 @@ export default function SettingMathurat() {
         <View style={{ flex: 1, alignItems: "flex-end" }}>
           <Switch
             value={isTranslate}
-            onValueChange={changeTranslate}
+            onValueChange={() => setIsTranslate(!isTranslate)}
             trackColor={{ true: COLOR.danger }}
           />
         </View>

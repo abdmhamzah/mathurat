@@ -1,15 +1,13 @@
 import React, { useContext } from "react";
 import { Text, FlatList, TouchableOpacity } from "react-native";
-import { dataDoaSholat } from "../data/dataDoaSholat";
 import { COLOR, SIZES, FONTS } from "../styles";
-import { SettingContext } from "../contexts/SettingProvider";
+import { DataContext } from "../contexts/DataProvider";
 
 export default function DoaSholatScreen({ navigation }) {
-  const { sizeArab, sizeTerjemah, fontArab } = useContext(SettingContext);
-
+  const { doaSholat } = useContext(DataContext);
   return (
     <FlatList
-      data={dataDoaSholat}
+      data={doaSholat}
       showsVerticalScrollIndicator={false}
       contentContainerStyle={{ paddingVertical: SIZES.padding * 2 }}
       keyExtractor={(item) => item.id}

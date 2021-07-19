@@ -9,6 +9,7 @@ export function SettingProvider({ children }) {
   const [isKubro, setIsKubro] = useState(false);
   const [isCc, setIsCc] = useState(false);
   const [isTranslate, setIsTranslate] = useState(false);
+  const [isPagi, setIsPagi] = useState(true);
 
   return (
     <SettingContext.Provider
@@ -25,6 +26,8 @@ export function SettingProvider({ children }) {
         setIsCc,
         isTranslate,
         setIsTranslate,
+        isPagi,
+        setIsPagi,
       }}
     >
       {children}

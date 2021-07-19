@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Text, FlatList, TouchableOpacity } from "react-native";
-import { dataHadist } from "../data/dataHadist";
+import { DataContext } from "../contexts/DataProvider";
 import { COLOR, FONTS, SIZES } from "../styles";
 
 export default function HadistScreen({ navigation }) {
+  const { hadist } = useContext(DataContext);
   return (
     <FlatList
       keyExtractor={(item) => item.id}
-      data={dataHadist}
+      data={hadist}
       showsVerticalScrollIndicator={false}
       contentContainerStyle={{
         paddingVertical: SIZES.padding * 2,

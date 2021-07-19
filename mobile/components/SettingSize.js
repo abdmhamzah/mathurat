@@ -35,8 +35,12 @@ export default function SettingSize() {
               justifyContent: "center",
             }}
           >
-            <Text style={fontArabChecker(fontArab, sizeArab)}>ٱللَّهُ</Text>
-            <Text style={fontLatinChecker(sizeTerjemah)}>Allah</Text>
+            <Text style={fontArabChecker(fontArab, sizeArab)}>
+              بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
+            </Text>
+            <Text style={fontLatinChecker(sizeTerjemah)}>
+              Bismillahirrahmaanirrahim
+            </Text>
           </View>
         </View>
         <Text

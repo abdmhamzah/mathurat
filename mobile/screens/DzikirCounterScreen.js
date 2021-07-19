@@ -1,15 +1,16 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
 import { Text, View, TouchableOpacity, Alert } from "react-native";
 import * as Haptics from "expo-haptics";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Carousel from "react-native-snap-carousel";
 import { FontAwesome } from "@expo/vector-icons";
-import { dataDzikir } from "../data/dataDzikir";
+import { DataContext } from "../contexts/DataProvider";
 import { DzikirCard } from "../components";
 import { COLOR, SIZES } from "../styles";
 
 export default function DzikirCounterScreen() {
   const carouselRef = useRef("");
+  const { dzikir } = useContext(DataContext);
   const [counter, setCounter] = useState(0);
 
   function addCounter() {
@@ -79,12 +80,15 @@ export default function DzikirCounterScreen() {
     <View style={{ alignItems: "center" }}>
       <Carousel
         ref={carouselRef}
-        data={dataDzikir}
+        data={dzikir}
         sliderWidth={SIZES.width}
         itemWidth={(SIZES.width * 2) / 3}
         layout={"stack"}
         layoutCardOffset={18}
-        containerCustomStyle={{ marginTop: SIZES.padding * 2, height: (SIZES.height * 2) / 7 }}
+        containerCustomStyle={{
+          marginTop: SIZES.padding * 2,
+          height: (SIZES.height * 2) / 7,
+        }}
         renderItem={({ item }) => (
           <DzikirCard
             arab={item.arab}
@@ -130,7 +134,11 @@ export default function DzikirCounterScreen() {
           <FontAwesome
             name="repeat"
             size={30}
-            style={counter === 0 ? { color: COLOR.secondary } : { color: COLOR.danger }}
+            style={
+              counter === 0
+                ? { color: COLOR.secondary }
+                : { color: COLOR.danger }
+            }
           />
         </TouchableOpacity>
         <TouchableOpacity
@@ -149,7 +157,11 @@ export default function DzikirCounterScreen() {
           <FontAwesome
             name="minus"
             size={30}
-            style={counter === 0 ? { color: COLOR.secondary } : { color: COLOR.danger }}
+            style={
+              counter === 0
+                ? { color: COLOR.secondary }
+                : { color: COLOR.danger }
+            }
           />
         </TouchableOpacity>
         <TouchableOpacity
@@ -166,9 +178,13 @@ export default function DzikirCounterScreen() {
           }}
         >
           <FontAwesome
-            name="star"
+            name="bookmark"
             size={30}
-            style={counter === 0 ? { color: COLOR.secondary } : { color: COLOR.danger }}
+            style={
+              counter === 0
+                ? { color: COLOR.secondary }
+                : { color: COLOR.danger }
+            }
           />
         </TouchableOpacity>
       </View>

@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Text, View, TouchableOpacity, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { FONTS, SIZES, COLOR } from "../styles";
+import { SettingContext } from "../contexts/SettingProvider";
 
 export default function CardMenu(props) {
   const navigation = useNavigation();
+  const { isPagi } = useContext(SettingContext);
 
   function goToTitle() {
-    navigation.navigate(props.title);
+    navigation.navigate(props.title, { id: props.id });
+  }
+
+  function generateMenu() {
+    if (props.title === "Al Ma'tsurat") {
+      if (isPagi) {
+        return `${props.title} Pagi`;
+      } else {
+        return `${props.title} Sore`;
+      }
+    } else {
+      return props.title;
+    }
   }
 
   return (
@@ -37,8 +51,10 @@ export default function CardMenu(props) {
             marginBottom: SIZES.padding2,
           }}
         />
-        <Text style={{ color: COLOR.warning, textAlign: "center", ...FONTS.h4 }}>
-          {props.title}
+        <Text
+          style={{ color: COLOR.warning, textAlign: "center", ...FONTS.h4 }}
+        >
+          {generateMenu()}
         </Text>
       </View>
     </TouchableOpacity>

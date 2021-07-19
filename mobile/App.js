@@ -10,12 +10,12 @@ import {
   DzikirCounterStack,
   HadistStack,
   HomeStack,
-  MathuratPagiStack,
-  MathuratSoreStack,
+  MathuratStack,
   SettingStack,
 } from "./stacks";
 import { COLOR } from "./styles";
 import { SettingProvider } from "./contexts/SettingProvider";
+import { DataProvider } from "./contexts/DataProvider";
 
 const Stack = createStackNavigator();
 
@@ -33,31 +33,34 @@ export default function App() {
 
   return (
     <SettingProvider>
-      <NavigationContainer theme={{ colors: { background: COLOR.secondary } }}>
-        <Stack.Navigator
-          initialRouteName="Home"
-          screenOptions={{
-            headerShown: false,
-          }}
+      <DataProvider>
+        <NavigationContainer
+          theme={{ colors: { background: COLOR.secondary } }}
         >
-          <Stack.Screen name="Home" component={HomeStack} />
-          <Stack.Screen
-            name="Al Ma'tsurat Pagi"
-            component={MathuratPagiStack}
-          />
-          <Stack.Screen
-            name="Al Ma'tsurat Sore"
-            component={MathuratSoreStack}
-          />
-          <Stack.Screen name="Hadist Arba'in" component={HadistStack} />
-          <Stack.Screen name="Dzikir Counter" component={DzikirCounterStack} />
-          <Stack.Screen name="Doa-doa Haji & Umroh" component={DoaHajiStack} />
-          <Stack.Screen name="Asmaul Husna" component={AsmaulHusnaStack} />
-          <Stack.Screen name="Doa-doa Sholat" component={DoaSholatStack} />
-          <Stack.Screen name="Doa-doa Pilihan" component={DoaPilihanStack} />
-          <Stack.Screen name="Setting" component={SettingStack} />
-        </Stack.Navigator>
-      </NavigationContainer>
+          <Stack.Navigator
+            initialRouteName="Home"
+            screenOptions={{
+              headerShown: false,
+            }}
+          >
+            <Stack.Screen name="Home" component={HomeStack} />
+            <Stack.Screen name="Al Ma'tsurat" component={MathuratStack} />
+            <Stack.Screen name="Hadist Arba'in" component={HadistStack} />
+            <Stack.Screen
+              name="Dzikir Counter"
+              component={DzikirCounterStack}
+            />
+            <Stack.Screen
+              name="Doa-doa Haji & Umroh"
+              component={DoaHajiStack}
+            />
+            <Stack.Screen name="Asmaul Husna" component={AsmaulHusnaStack} />
+            <Stack.Screen name="Doa-doa Sholat" component={DoaSholatStack} />
+            <Stack.Screen name="Doa-doa Pilihan" component={DoaPilihanStack} />
+            <Stack.Screen name="Setting" component={SettingStack} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </DataProvider>
     </SettingProvider>
   );
 }

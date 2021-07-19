@@ -1,13 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Text, View, FlatList } from "react-native";
-import { dataAsmaulHusna } from "../data";
 import { COLOR, FONTS, SIZES } from "../styles";
 import { SettingContext } from "../contexts/SettingProvider";
+import { DataContext } from "../contexts/DataProvider";
 
 export default function AsmaulHusnaScreen(props) {
   const { fontArab } = useContext(SettingContext);
-  const [asmaulHusna, setAsmaulHusna] = useState(dataAsmaulHusna);
+  const { asmaulHusna } = useContext(DataContext);
   const [initialX1, setInitialX1] = useState(1);
   const [initialY1, setInitialY1] = useState(1);
   const [initialX2, setInitialX2] = useState(1);

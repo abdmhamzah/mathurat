@@ -1,23 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { MathuratPagiScreen } from "../screens";
+import { MathuratScreen } from "../screens";
 import { COLOR, FONTS } from "../styles";
+import { SettingContext } from "../contexts/SettingProvider";
 
 const Stack = createStackNavigator();
 
-export default function MathuratPagiStack() {
-  const [isKubro, setIsKubro] = useState(false);
-
-  async function getKubro() {
-    const jsonValue = await AsyncStorage.getItem("kubro");
-    const { value } = JSON.parse(jsonValue);
-    setIsKubro(value);
-  }
+export default function MathuratPagiStack(props) {
+  const { isKubro, isPagi, setIsPagi } = useContext(SettingContext);
+  const { id } = props.route.params;
 
   useEffect(() => {
-    getKubro();
-  }, [isKubro]);
+    if (id === "1") {
+      setIsPagi(true);
+    } else {
+      setIsPagi(!isPagi);
+    }
+  }, []);
 
   return (
     <Stack.Navigator
@@ -26,10 +25,12 @@ export default function MathuratPagiStack() {
       }}
     >
       <Stack.Screen
-        name="Al Ma'tsurat Pagi"
-        component={MathuratPagiScreen}
+        name="Al Ma'tsurat"
+        component={MathuratScreen}
         options={{
-          title: `Ma'tsurat Pagi ${isKubro ? "Kubro" : "Sughra"}`,
+          title: `Ma'tsurat ${isPagi ? "Pagi" : "Sore"} ${
+            isKubro ? "Kubro" : "Sughra"
+          }`,
           headerStyle: {
             backgroundColor: COLOR.primary,
             shadowColor: COLOR.black,

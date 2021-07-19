@@ -2,8 +2,8 @@ export const dataAsmaulHusna = [
   {
     id: 1,
     arab: "اللّٰه",
-    terjemah: "Yaa Allah",
-    transliterasi: "Yaa Allah",
+    terjemah: "Allah",
+    transliterasi: "Allah",
   },
   {
     id: 2,

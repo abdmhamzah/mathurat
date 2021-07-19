@@ -1,20 +1,40 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { FlatList } from "react-native";
-import { dataMathuratSughraSore } from "../data/dataMathuratSughraSore";
-import { dataMathuratKubroSore } from "../data/dataMathuratKubroSore";
 import { SettingContext } from "../contexts/SettingProvider";
 import { CardDua } from "../components";
 import { SIZES } from "../styles";
+import { DataContext } from "../contexts/DataProvider";
 
 export default function MathuratSore() {
-  const { isKubro } = useContext(SettingContext);
-  const [mathuratSughra, setMathuratSughra] = useState(dataMathuratSughraSore);
-  const [mathuratKubro, setMathuratKubro] = useState(dataMathuratKubroSore);
+  const { isKubro, isPagi } = useContext(SettingContext);
+
+  const {
+    mathuratSughraPagi,
+    mathuratKubroPagi,
+    mathuratSughraSore,
+    mathuratKubroSore,
+  } = useContext(DataContext);
+
+  function setMathurat() {
+    if (isPagi) {
+      if (isKubro) {
+        return mathuratKubroPagi;
+      } else {
+        return mathuratSughraPagi;
+      }
+    } else {
+      if (isKubro) {
+        return mathuratKubroSore;
+      } else {
+        return mathuratSughraSore;
+      }
+    }
+  }
 
   return (
     <FlatList
       keyExtractor={(item) => item.id}
-      data={isKubro ? mathuratKubro : mathuratSughra}
+      data={setMathurat()}
       showsVerticalScrollIndicator={false}
       contentContainerStyle={{ paddingVertical: SIZES.padding * 2 }}
       renderItem={({ item }) => (

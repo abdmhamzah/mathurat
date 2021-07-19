@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FlatList, Text, View, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
-import { dataMenu } from "../data/dataMenu";
 import { ButtonMenu } from "../components";
 import { FONTS, COLOR, SIZES } from "../styles";
+import { DataContext } from "../contexts/DataProvider";
 
 export default function HomeScreen({ navigation }) {
-  const [title, setTitle] = useState(dataMenu);
   const [currentTime, setCurrentTime] = useState("");
+  const { menu } = useContext(DataContext);
 
   useEffect(() => {
     var timerID = setInterval(() => tick(), 1000);
@@ -60,13 +60,15 @@ export default function HomeScreen({ navigation }) {
       <View style={{ flex: 8.85, alignItems: "center" }}>
         <FlatList
           numColumns={2}
-          data={title}
+          data={menu}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{
             paddingVertical: SIZES.padding,
           }}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <ButtonMenu title={item.name} logo={item.logo} />}
+          renderItem={({ item }) => (
+            <ButtonMenu id={item.id} title={item.name} logo={item.logo} />
+          )}
         />
       </View>
     </View>

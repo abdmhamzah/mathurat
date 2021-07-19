@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { View, Text, FlatList } from "react-native";
 import { FONTS, SIZES, COLOR } from "../styles";
 import { fontLatinChecker, fontArabChecker } from "../helpers";
